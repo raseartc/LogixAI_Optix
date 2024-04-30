@@ -72,15 +72,15 @@ Project:
    Uri: 'a1d28b0c30b26b7ff378a6955948c063#ThingWorx Kepware Server'
    ServerUri: a1d28b0c30b26b7ff378a6955948c063
  Statistics:
-  TotalNodeCount: 126789
-  Objects: 1879
+  TotalNodeCount: 126775
+  Objects: 1876
   ObjectTypes: 13
-  Variables: 124761
+  Variables: 124750
   VariableTypes: 68
   DataTypes: 68
   Methods: 0
-  References: 61
+  References: 52
   ReferenceTypes: 0
-  Files: 49
+  Files: 48
  Nodes:
  - File: Nodes/LogixAI_Optix.yaml

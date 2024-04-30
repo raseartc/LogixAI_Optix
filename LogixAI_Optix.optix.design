@@ -46,17 +46,16 @@ Project:
    Uri: 'a1d28b0c30b26b7ff378a6955948c063#ThingWorx Kepware Server'
    ServerUri: a1d28b0c30b26b7ff378a6955948c063
  Statistics:
-  TotalNodeCount: 12
-  Objects: 3
+  TotalNodeCount: 8
+  Objects: 2
   ObjectTypes: 0
-  Variables: 9
+  Variables: 6
   VariableTypes: 0
   DataTypes: 0
   Methods: 0
   References: 0
   ReferenceTypes: 0
-  Files: 3
+  Files: 2
  Nodes:
  - File: DesignTimeNodes/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_LogixStation1/TagImporter.yaml
  - File: 'DesignTimeNodes/OPC-UA/OPCUAClient1/OPCUATagImporter.yaml'
- - File: 'DesignTimeNodes/OPC-UA/OPCUAClient2/OPCUATagImporter.yaml'
