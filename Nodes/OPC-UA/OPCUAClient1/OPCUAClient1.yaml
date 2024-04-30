@@ -82,4 +82,4 @@ Children:
 - Name: ClientCertificateFile
   Type: BaseDataVariableType
   DataType: ResourceUri
-  Value: "ns=7;%PROJECTDIR%/PKI/Own/Certs/fe7c1803e9d9dea3bef92c9e50ca7b9b347b2a03.der"
+  Value: ""
