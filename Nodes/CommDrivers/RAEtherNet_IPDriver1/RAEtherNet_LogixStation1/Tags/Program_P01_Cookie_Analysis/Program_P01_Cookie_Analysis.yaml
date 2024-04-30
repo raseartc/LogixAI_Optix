@@ -1,0 +1,5665 @@
+Name: 'Program:P01_Cookie_Analysis'
+Type: FolderType
+Children:
+- Name: CQI_Calc
+  Type: CQI_Calc
+  DataType: CQI_Calc
+  Children:
+  - Name: Cmd_AutoCalculate
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.CQI_Calc.Cmd_AutoCalculate"
+  - Name: Cmd_AutoTrain
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.CQI_Calc.Cmd_AutoTrain"
+  - Name: Cmd_SingleCalculate
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.CQI_Calc.Cmd_SingleCalculate"
+  - Name: Cmd_SingleTrain
+    Id: g=d08609465b0f12f393e4a3b6fe0b7137
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.CQI_Calc.Cmd_SingleTrain"
+  - Name: EnableIn
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.CQI_Calc.EnableIn"
+  - Name: EnableOut
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.CQI_Calc.EnableOut"
+  - Name: Set_AutoTrainCycles
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.CQI_Calc.Set_AutoTrainCycles"
+  - Name: Sts_AutoCalculate
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.CQI_Calc.Sts_AutoCalculate"
+  - Name: Sts_AutoTrainDone
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.CQI_Calc.Sts_AutoTrainDone"
+  - Name: Sts_AutoTraining
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.CQI_Calc.Sts_AutoTraining"
+  - Name: Sts_Training
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.CQI_Calc.Sts_Training"
+  - Name: Val_ActualValue
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.CQI_Calc.Val_ActualValue"
+  - Name: Val_AutoTrainCount
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.CQI_Calc.Val_AutoTrainCount"
+  - Name: Val_AutoTrainCycles
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.CQI_Calc.Val_AutoTrainCycles"
+  - Name: Val_Confidence
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.CQI_Calc.Val_Confidence"
+  - Name: Val_Error
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.CQI_Calc.Val_Error"
+  - Name: Val_PredictedValue
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.CQI_Calc.Val_PredictedValue"
+  - Name: Val_TrainCount
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.CQI_Calc.Val_TrainCount"
+- Name: Count_1
+  Type: COUNTER
+  DataType: COUNTER
+  Children:
+  - Name: ACC
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.Count_1.ACC"
+  - Name: CD
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.Count_1.CD"
+  - Name: CU
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.Count_1.CU"
+  - Name: DN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.Count_1.DN"
+  - Name: OV
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.Count_1.OV"
+  - Name: PRE
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.Count_1.PRE"
+  - Name: UN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.Count_1.UN"
+- Name: Count_2
+  Type: COUNTER
+  DataType: COUNTER
+  Children:
+  - Name: ACC
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.Count_2.ACC"
+  - Name: CD
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.Count_2.CD"
+  - Name: CU
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.Count_2.CU"
+  - Name: DN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.Count_2.DN"
+  - Name: OV
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.Count_2.OV"
+  - Name: PRE
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.Count_2.PRE"
+  - Name: UN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.Count_2.UN"
+- Name: Count_3
+  Type: COUNTER
+  DataType: COUNTER
+  Children:
+  - Name: ACC
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.Count_3.ACC"
+  - Name: CD
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.Count_3.CD"
+  - Name: CU
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.Count_3.CU"
+  - Name: DN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.Count_3.DN"
+  - Name: OV
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.Count_3.OV"
+  - Name: PRE
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.Count_3.PRE"
+  - Name: UN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.Count_3.UN"
+- Name: Equ1
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P01_Cookie_Analysis.Equ1"
+- Name: Equ2
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P01_Cookie_Analysis.Equ2"
+- Name: Equ3
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P01_Cookie_Analysis.Equ3"
+- Name: TON_50ms
+  Type: TIMER
+  DataType: TIMER
+  Children:
+  - Name: ACC
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.TON_50ms.ACC"
+  - Name: DN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.TON_50ms.DN"
+  - Name: EN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.TON_50ms.EN"
+  - Name: PRE
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.TON_50ms.PRE"
+  - Name: TT
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.TON_50ms.TT"
+- Name: pInitialize
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P01_Cookie_Analysis.pInitialize"
+- Name: pVariable1
+  Type: AOI_SineWave
+  DataType: AOI_SineWave
+  Children:
+  - Name: EnableIn
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.pVariable1.EnableIn"
+  - Name: EnableOut
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.pVariable1.EnableOut"
+  - Name: Val_YValue
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.pVariable1.Val_YValue"
+  - Name: Wrk_10msTimer
+    Type: TIMER
+    DataType: TIMER
+    Children:
+    - Name: ACC
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.pVariable1.Wrk_10msTimer.ACC"
+    - Name: DN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.pVariable1.Wrk_10msTimer.DN"
+    - Name: EN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.pVariable1.Wrk_10msTimer.EN"
+    - Name: PRE
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.pVariable1.Wrk_10msTimer.PRE"
+    - Name: TT
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.pVariable1.Wrk_10msTimer.TT"
+  - Name: Wrk_1Percent
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.pVariable1.Wrk_1Percent"
+  - Name: Wrk_ActualOffset
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.pVariable1.Wrk_ActualOffset"
+  - Name: Wrk_LastCommandedSP
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.pVariable1.Wrk_LastCommandedSP"
+  - Name: Wrk_OffsetDiff
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.pVariable1.Wrk_OffsetDiff"
+  - Name: Wrk_OffsetDiffABS
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.pVariable1.Wrk_OffsetDiffABS"
+  - Name: Wrk_Pi
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.pVariable1.Wrk_Pi"
+  - Name: Wrk_ScratchPad1
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.pVariable1.Wrk_ScratchPad1"
+  - Name: Wrk_ScratchPad2
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.pVariable1.Wrk_ScratchPad2"
+  - Name: Wrk_TimeWindow
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.pVariable1.Wrk_TimeWindow"
+  - Name: Wrk_YValue
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.pVariable1.Wrk_YValue"
+- Name: pVariable1_Tags
+  Type: UDT_SineWave
+  DataType: UDT_SineWave
+  Children:
+  - Name: Amplitude
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.pVariable1_Tags.Amplitude"
+  - Name: Frequency
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.pVariable1_Tags.Frequency"
+  - Name: Offset
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.pVariable1_Tags.Offset"
+  - Name: Phase
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.pVariable1_Tags.Phase"
+- Name: pVariable2
+  Type: AOI_SineWave
+  DataType: AOI_SineWave
+  Children:
+  - Name: EnableIn
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.pVariable2.EnableIn"
+  - Name: EnableOut
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.pVariable2.EnableOut"
+  - Name: Val_YValue
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.pVariable2.Val_YValue"
+  - Name: Wrk_10msTimer
+    Type: TIMER
+    DataType: TIMER
+    Children:
+    - Name: ACC
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.pVariable2.Wrk_10msTimer.ACC"
+    - Name: DN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.pVariable2.Wrk_10msTimer.DN"
+    - Name: EN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.pVariable2.Wrk_10msTimer.EN"
+    - Name: PRE
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.pVariable2.Wrk_10msTimer.PRE"
+    - Name: TT
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.pVariable2.Wrk_10msTimer.TT"
+  - Name: Wrk_1Percent
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.pVariable2.Wrk_1Percent"
+  - Name: Wrk_ActualOffset
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.pVariable2.Wrk_ActualOffset"
+  - Name: Wrk_LastCommandedSP
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.pVariable2.Wrk_LastCommandedSP"
+  - Name: Wrk_OffsetDiff
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.pVariable2.Wrk_OffsetDiff"
+  - Name: Wrk_OffsetDiffABS
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.pVariable2.Wrk_OffsetDiffABS"
+  - Name: Wrk_Pi
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.pVariable2.Wrk_Pi"
+  - Name: Wrk_ScratchPad1
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.pVariable2.Wrk_ScratchPad1"
+  - Name: Wrk_ScratchPad2
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.pVariable2.Wrk_ScratchPad2"
+  - Name: Wrk_TimeWindow
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.pVariable2.Wrk_TimeWindow"
+  - Name: Wrk_YValue
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.pVariable2.Wrk_YValue"
+- Name: pVariable2_Tags
+  Type: UDT_SineWave
+  DataType: UDT_SineWave
+  Children:
+  - Name: Amplitude
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.pVariable2_Tags.Amplitude"
+  - Name: Frequency
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.pVariable2_Tags.Frequency"
+  - Name: Offset
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.pVariable2_Tags.Offset"
+  - Name: Phase
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.pVariable2_Tags.Phase"
+- Name: pVariable3
+  Type: AOI_SineWave
+  DataType: AOI_SineWave
+  Children:
+  - Name: EnableIn
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.pVariable3.EnableIn"
+  - Name: EnableOut
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.pVariable3.EnableOut"
+  - Name: Val_YValue
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.pVariable3.Val_YValue"
+  - Name: Wrk_10msTimer
+    Type: TIMER
+    DataType: TIMER
+    Children:
+    - Name: ACC
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.pVariable3.Wrk_10msTimer.ACC"
+    - Name: DN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.pVariable3.Wrk_10msTimer.DN"
+    - Name: EN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.pVariable3.Wrk_10msTimer.EN"
+    - Name: PRE
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.pVariable3.Wrk_10msTimer.PRE"
+    - Name: TT
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.pVariable3.Wrk_10msTimer.TT"
+  - Name: Wrk_1Percent
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.pVariable3.Wrk_1Percent"
+  - Name: Wrk_ActualOffset
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.pVariable3.Wrk_ActualOffset"
+  - Name: Wrk_LastCommandedSP
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.pVariable3.Wrk_LastCommandedSP"
+  - Name: Wrk_OffsetDiff
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.pVariable3.Wrk_OffsetDiff"
+  - Name: Wrk_OffsetDiffABS
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.pVariable3.Wrk_OffsetDiffABS"
+  - Name: Wrk_Pi
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.pVariable3.Wrk_Pi"
+  - Name: Wrk_ScratchPad1
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.pVariable3.Wrk_ScratchPad1"
+  - Name: Wrk_ScratchPad2
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.pVariable3.Wrk_ScratchPad2"
+  - Name: Wrk_TimeWindow
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.pVariable3.Wrk_TimeWindow"
+  - Name: Wrk_YValue
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.pVariable3.Wrk_YValue"
+- Name: pVariable3_Tags
+  Type: UDT_SineWave
+  DataType: UDT_SineWave
+  Children:
+  - Name: Amplitude
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.pVariable3_Tags.Amplitude"
+  - Name: Frequency
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.pVariable3_Tags.Frequency"
+  - Name: Offset
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.pVariable3_Tags.Offset"
+  - Name: Phase
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.pVariable3_Tags.Phase"
+- Name: pCookie_Count
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P01_Cookie_Analysis.pCookie_Count"
+- Name: pTriggerSample
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P01_Cookie_Analysis.pTriggerSample"
+- Name: pSampleEnable
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P01_Cookie_Analysis.pSampleEnable"
+- Name: Cmd_TakeSample
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P01_Cookie_Analysis.Cmd_TakeSample"
+- Name: b
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P01_Cookie_Analysis.b"
+- Name: Quality_Train
+  Type: Cookie_Quality
+  DataType: Cookie_Quality
+  ValueRank: OneDimension
+  ArrayDimensions: [100]
+  Children:
+  - Name: 0
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[0].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[0].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[0].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[0].Quality_Index"
+  - Name: 1
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[1].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[1].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[1].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[1].Quality_Index"
+  - Name: 2
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[2].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[2].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[2].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[2].Quality_Index"
+  - Name: 3
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[3].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[3].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[3].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[3].Quality_Index"
+  - Name: 4
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[4].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[4].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[4].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[4].Quality_Index"
+  - Name: 5
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[5].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[5].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[5].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[5].Quality_Index"
+  - Name: 6
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[6].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[6].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[6].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[6].Quality_Index"
+  - Name: 7
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[7].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[7].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[7].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[7].Quality_Index"
+  - Name: 8
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[8].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[8].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[8].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[8].Quality_Index"
+  - Name: 9
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[9].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[9].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[9].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[9].Quality_Index"
+  - Name: 10
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[10].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[10].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[10].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[10].Quality_Index"
+  - Name: 11
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[11].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[11].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[11].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[11].Quality_Index"
+  - Name: 12
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[12].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[12].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[12].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[12].Quality_Index"
+  - Name: 13
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[13].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[13].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[13].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[13].Quality_Index"
+  - Name: 14
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[14].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[14].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[14].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[14].Quality_Index"
+  - Name: 15
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[15].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[15].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[15].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[15].Quality_Index"
+  - Name: 16
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[16].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[16].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[16].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[16].Quality_Index"
+  - Name: 17
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[17].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[17].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[17].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[17].Quality_Index"
+  - Name: 18
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[18].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[18].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[18].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[18].Quality_Index"
+  - Name: 19
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[19].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[19].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[19].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[19].Quality_Index"
+  - Name: 20
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[20].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[20].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[20].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[20].Quality_Index"
+  - Name: 21
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[21].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[21].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[21].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[21].Quality_Index"
+  - Name: 22
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[22].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[22].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[22].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[22].Quality_Index"
+  - Name: 23
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[23].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[23].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[23].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[23].Quality_Index"
+  - Name: 24
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[24].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[24].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[24].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[24].Quality_Index"
+  - Name: 25
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[25].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[25].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[25].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[25].Quality_Index"
+  - Name: 26
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[26].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[26].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[26].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[26].Quality_Index"
+  - Name: 27
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[27].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[27].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[27].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[27].Quality_Index"
+  - Name: 28
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[28].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[28].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[28].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[28].Quality_Index"
+  - Name: 29
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[29].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[29].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[29].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[29].Quality_Index"
+  - Name: 30
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[30].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[30].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[30].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[30].Quality_Index"
+  - Name: 31
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[31].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[31].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[31].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[31].Quality_Index"
+  - Name: 32
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[32].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[32].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[32].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[32].Quality_Index"
+  - Name: 33
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[33].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[33].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[33].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[33].Quality_Index"
+  - Name: 34
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[34].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[34].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[34].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[34].Quality_Index"
+  - Name: 35
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[35].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[35].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[35].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[35].Quality_Index"
+  - Name: 36
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[36].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[36].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[36].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[36].Quality_Index"
+  - Name: 37
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[37].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[37].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[37].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[37].Quality_Index"
+  - Name: 38
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[38].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[38].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[38].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[38].Quality_Index"
+  - Name: 39
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[39].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[39].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[39].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[39].Quality_Index"
+  - Name: 40
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[40].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[40].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[40].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[40].Quality_Index"
+  - Name: 41
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[41].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[41].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[41].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[41].Quality_Index"
+  - Name: 42
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[42].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[42].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[42].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[42].Quality_Index"
+  - Name: 43
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[43].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[43].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[43].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[43].Quality_Index"
+  - Name: 44
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[44].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[44].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[44].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[44].Quality_Index"
+  - Name: 45
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[45].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[45].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[45].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[45].Quality_Index"
+  - Name: 46
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[46].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[46].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[46].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[46].Quality_Index"
+  - Name: 47
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[47].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[47].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[47].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[47].Quality_Index"
+  - Name: 48
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[48].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[48].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[48].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[48].Quality_Index"
+  - Name: 49
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[49].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[49].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[49].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[49].Quality_Index"
+  - Name: 50
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[50].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[50].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[50].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[50].Quality_Index"
+  - Name: 51
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[51].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[51].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[51].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[51].Quality_Index"
+  - Name: 52
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[52].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[52].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[52].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[52].Quality_Index"
+  - Name: 53
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[53].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[53].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[53].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[53].Quality_Index"
+  - Name: 54
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[54].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[54].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[54].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[54].Quality_Index"
+  - Name: 55
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[55].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[55].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[55].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[55].Quality_Index"
+  - Name: 56
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[56].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[56].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[56].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[56].Quality_Index"
+  - Name: 57
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[57].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[57].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[57].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[57].Quality_Index"
+  - Name: 58
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[58].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[58].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[58].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[58].Quality_Index"
+  - Name: 59
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[59].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[59].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[59].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[59].Quality_Index"
+  - Name: 60
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[60].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[60].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[60].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[60].Quality_Index"
+  - Name: 61
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[61].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[61].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[61].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[61].Quality_Index"
+  - Name: 62
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[62].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[62].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[62].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[62].Quality_Index"
+  - Name: 63
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[63].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[63].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[63].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[63].Quality_Index"
+  - Name: 64
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[64].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[64].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[64].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[64].Quality_Index"
+  - Name: 65
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[65].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[65].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[65].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[65].Quality_Index"
+  - Name: 66
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[66].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[66].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[66].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[66].Quality_Index"
+  - Name: 67
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[67].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[67].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[67].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[67].Quality_Index"
+  - Name: 68
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[68].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[68].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[68].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[68].Quality_Index"
+  - Name: 69
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[69].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[69].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[69].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[69].Quality_Index"
+  - Name: 70
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[70].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[70].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[70].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[70].Quality_Index"
+  - Name: 71
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[71].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[71].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[71].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[71].Quality_Index"
+  - Name: 72
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[72].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[72].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[72].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[72].Quality_Index"
+  - Name: 73
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[73].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[73].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[73].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[73].Quality_Index"
+  - Name: 74
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[74].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[74].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[74].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[74].Quality_Index"
+  - Name: 75
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[75].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[75].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[75].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[75].Quality_Index"
+  - Name: 76
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[76].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[76].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[76].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[76].Quality_Index"
+  - Name: 77
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[77].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[77].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[77].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[77].Quality_Index"
+  - Name: 78
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[78].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[78].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[78].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[78].Quality_Index"
+  - Name: 79
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[79].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[79].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[79].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[79].Quality_Index"
+  - Name: 80
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[80].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[80].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[80].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[80].Quality_Index"
+  - Name: 81
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[81].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[81].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[81].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[81].Quality_Index"
+  - Name: 82
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[82].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[82].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[82].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[82].Quality_Index"
+  - Name: 83
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[83].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[83].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[83].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[83].Quality_Index"
+  - Name: 84
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[84].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[84].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[84].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[84].Quality_Index"
+  - Name: 85
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[85].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[85].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[85].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[85].Quality_Index"
+  - Name: 86
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[86].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[86].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[86].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[86].Quality_Index"
+  - Name: 87
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[87].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[87].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[87].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[87].Quality_Index"
+  - Name: 88
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[88].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[88].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[88].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[88].Quality_Index"
+  - Name: 89
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[89].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[89].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[89].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[89].Quality_Index"
+  - Name: 90
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[90].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[90].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[90].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[90].Quality_Index"
+  - Name: 91
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[91].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[91].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[91].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[91].Quality_Index"
+  - Name: 92
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[92].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[92].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[92].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[92].Quality_Index"
+  - Name: 93
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[93].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[93].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[93].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[93].Quality_Index"
+  - Name: 94
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[94].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[94].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[94].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[94].Quality_Index"
+  - Name: 95
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[95].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[95].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[95].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[95].Quality_Index"
+  - Name: 96
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[96].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[96].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[96].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[96].Quality_Index"
+  - Name: 97
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[97].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[97].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[97].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[97].Quality_Index"
+  - Name: 98
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[98].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[98].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[98].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[98].Quality_Index"
+  - Name: 99
+    Type: Cookie_Quality
+    DataType: Cookie_Quality
+    Children:
+    - Name: Diameter
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[99].Diameter"
+    - Name: Exit_Temperature
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[99].Exit_Temperature"
+    - Name: Height
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[99].Height"
+    - Name: Quality_Index
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P01_Cookie_Analysis.Quality_Train[99].Quality_Index"
+  - Name: Diameter
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Diameter"
+  - Name: Exit_Temperature
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Exit_Temperature"
+- Name: Index
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P01_Cookie_Analysis.Index"
+- Name: ons
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P01_Cookie_Analysis.ons"
+- Name: pLoadArray
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P01_Cookie_Analysis.pLoadArray"
+- Name: Cmd_MakeCookies
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P01_Cookie_Analysis.Cmd_MakeCookies"
+- Name: TON_1000ms
+  Type: TIMER
+  DataType: TIMER
+  Children:
+  - Name: ACC
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.TON_1000ms.ACC"
+  - Name: DN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.TON_1000ms.DN"
+  - Name: EN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.TON_1000ms.EN"
+  - Name: PRE
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.TON_1000ms.PRE"
+  - Name: TT
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.TON_1000ms.TT"
+- Name: Cmd_ProductionMode
+  Id: g=11b4df855de842c7a580f16ec3e7cbbf
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P01_Cookie_Analysis.Cmd_ProductionMode"
+- Name: Index2
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P01_Cookie_Analysis.Index2"
+- Name: TON_500ms
+  Type: TIMER
+  DataType: TIMER
+  Children:
+  - Name: ACC
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.TON_500ms.ACC"
+  - Name: DN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.TON_500ms.DN"
+  - Name: EN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.TON_500ms.EN"
+  - Name: PRE
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.TON_500ms.PRE"
+  - Name: TT
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.TON_500ms.TT"
+- Name: Cmd_AbnormalOperation
+  Id: g=b011ea1088625ff67dc073d05933112b
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P01_Cookie_Analysis.Cmd_AbnormalOperation"
+- Name: Val_QualityMax
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P01_Cookie_Analysis.Val_QualityMax"
+- Name: pRating
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P01_Cookie_Analysis.pRating"
+- Name: Cmd_NormalOperation
+  Id: g=4ddeb6cc3550a47c9917e991d373e004
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P01_Cookie_Analysis.Cmd_NormalOperation"
+- Name: Cmd_QualityTrain
+  Id: g=48a17a4366f49daf9b6108edfec26423
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P01_Cookie_Analysis.Cmd_QualityTrain"
+- Name: Val_CaseCount
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P01_Cookie_Analysis.Val_CaseCount"
+- Name: Cmd_SingleTrain
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P01_Cookie_Analysis.Cmd_SingleTrain"
+- Name: Val_DiameterST
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P01_Cookie_Analysis.Val_DiameterST"
+- Name: Val_HeightST
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P01_Cookie_Analysis.Val_HeightST"
+- Name: Val_TempST
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P01_Cookie_Analysis.Val_TempST"
+- Name: Val_RatingST
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P01_Cookie_Analysis.Val_RatingST"
+- Name: Val_QualityMin
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P01_Cookie_Analysis.Val_QualityMin"
+- Name: Val_CaseQuality
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  ValueRank: OneDimension
+  ArrayDimensions: [22]
+  Value: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P01_Cookie_Analysis.Val_CaseQuality"
+- Name: pOldVal
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P01_Cookie_Analysis.pOldVal"
+- Name: Cmd_ClearFaults
+  Id: g=5c96a56bcca9f6040ecb47cc6aeb41e0
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P01_Cookie_Analysis.Cmd_ClearFaults"
+- Name: Cmd_ClearTrainingData
+  Id: g=a8c0f1b2f0a53ac23bcbfdfdd9ceac4b
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P01_Cookie_Analysis.Cmd_ClearTrainingData"
+- Name: Cmd_ClearTrainingTable
+  Id: g=0d8b8050bd79c1a8c9ffaf12c4feea35
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P01_Cookie_Analysis.Cmd_ClearTrainingTable"
+- Name: Cmd_GenerateNumbers
+  Id: g=3a6dcf29ed2bb7086cde7179e34026f4
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P01_Cookie_Analysis.Cmd_GenerateNumbers"
+- Name: Cmd_ManualEntry
+  Id: g=bcb5b3b25d37546a00961204ebfc483f
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P01_Cookie_Analysis.Cmd_ManualEntry"
+- Name: Cmd_TrainNextCycle
+  Id: g=8e2f4f0d282e3a0c4d38ba8ca3b190f0
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P01_Cookie_Analysis.Cmd_TrainNextCycle"
+- Name: hmi_CQI
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P01_Cookie_Analysis.hmi_CQI"
+- Name: hmi_Diameter
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P01_Cookie_Analysis.hmi_Diameter"
+- Name: hmi_Height
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P01_Cookie_Analysis.hmi_Height"
+- Name: hmi_Temp
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P01_Cookie_Analysis.hmi_Temp"
+- Name: Inp_hmiCQI
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P01_Cookie_Analysis.Inp_hmiCQI"
+- Name: Inp_hmiDiameter
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P01_Cookie_Analysis.Inp_hmiDiameter"
+- Name: Inp_hmiHeight
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P01_Cookie_Analysis.Inp_hmiHeight"
+- Name: Inp_hmiTemp
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P01_Cookie_Analysis.Inp_hmiTemp"
+- Name: pAdjustPhase
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P01_Cookie_Analysis.pAdjustPhase"
+- Name: pCalcPause
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P01_Cookie_Analysis.pCalcPause"
+- Name: pCalcPaused
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P01_Cookie_Analysis.pCalcPaused"
+- Name: pManualEntry
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P01_Cookie_Analysis.pManualEntry"
+- Name: pPhase_Adjust
+  Type: TIMER
+  DataType: TIMER
+  Children:
+  - Name: ACC
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.pPhase_Adjust.ACC"
+  - Name: DN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.pPhase_Adjust.DN"
+  - Name: EN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.pPhase_Adjust.EN"
+  - Name: PRE
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.pPhase_Adjust.PRE"
+  - Name: TT
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P01_Cookie_Analysis.pPhase_Adjust.TT"
+- Name: pTrainNextCycle
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P01_Cookie_Analysis.pTrainNextCycle"

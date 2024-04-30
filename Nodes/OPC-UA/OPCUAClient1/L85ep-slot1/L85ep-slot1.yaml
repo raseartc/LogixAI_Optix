@@ -1,0 +1,8 @@
+Name: 'ns=19;L85ep-slot1'
+Id: 'ns=19;s=Channel1.L85ep-slot1'
+Type: FolderType
+DisplayName: {"LocaleId":"en","Text":"L85ep-slot1"}
+Description: {"LocaleId":"en","Text":""}
+ReferenceType: Organizes
+Children:
+- File: Global/Global.yaml

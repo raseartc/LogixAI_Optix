@@ -1,0 +1,8 @@
+Name: ns=19;Global
+Id: 'ns=19;s=Channel1.L85ep-slot1.Global'
+Type: FolderType
+DisplayName: {"LocaleId":"en","Text":"Global"}
+Description: {"LocaleId":"en","Text":""}
+ReferenceType: Organizes
+Children:
+- File: MIXER_01/MIXER_01.yaml

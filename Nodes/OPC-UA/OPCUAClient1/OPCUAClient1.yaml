@@ -1,0 +1,85 @@
+Name: OPCUAClient1
+Id: g=a1d28b0c30b26b7ff378a6955948c063
+Type: OPCUAClient
+Children:
+- Name: ServerEndpointURL
+  Type: BaseDataVariableType
+  DataType: String
+  Value: ""
+- Name: MinimumMessageSecurityMode
+  Type: BaseDataVariableType
+  DataType: MessageSecurityModeEnum
+  Value: 0
+- Name: MinimumSecurityPolicy
+  Type: BaseDataVariableType
+  DataType: SecurityPolicyEnum
+  Value: 0
+- Name: UserIdentityType
+  Type: BaseDataVariableType
+  DataType: UserIdentityTypeEnum
+  Value: 0
+- Name: ConnectionStatus
+  Type: BaseDataVariableType
+  DataType: ConnectionStatusEnum
+  AccessLevel: Read
+  Value: 0
+- Name: ServerUri
+  Type: BaseDataVariableType
+  DataType: String
+  AccessLevel: Read
+  Value: ""
+- Name: Events
+  Type: BaseDataVariableType
+  DataType: EventsEnum
+  Value: 1
+- Name: RuntimeConfigurations
+  Type: BaseObjectType
+- Class: Reference
+  Target: ns=15;i=8
+  Direction: Forward
+- Class: Reference
+  Target: ns=15;i=9
+  Direction: Forward
+- Class: Reference
+  Target: ns=15;i=54
+  Direction: Forward
+- Class: Reference
+  Target: ns=15;i=57
+  Direction: Forward
+- Class: Reference
+  Target: ns=15;i=91
+  Direction: Forward
+- Class: Reference
+  Target: ns=15;i=60
+  Direction: Forward
+- Class: Reference
+  Target: ns=15;i=63
+  Direction: Forward
+- Class: Reference
+  Target: ns=15;i=83
+  Direction: Forward
+- Class: Reference
+  Target: ns=15;i=75
+  Direction: Forward
+- Name: RequestedPublishingInterval
+  Type: BaseDataVariableType
+  DataType: Duration
+  Value: "0:00:00:1.0000000"
+- Name: Objects
+  Type: BaseObjectType
+  Children:
+  - Name: ns=19;Channel1
+    Id: ns=19;s=Channel1
+    Type: FolderType
+    DisplayName: {"LocaleId":"en","Text":"Channel1"}
+    Description: {"LocaleId":"en","Text":""}
+    Children:
+    - File: 'L85ep-slot1/L85ep-slot1.yaml'
+- Name: VerifyServerIdentity
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: true
+- Name: ClientCertificateFile
+  Type: BaseDataVariableType
+  DataType: ResourceUri
+  Value: "ns=7;%PROJECTDIR%/PKI/Own/Certs/fe7c1803e9d9dea3bef92c9e50ca7b9b347b2a03.der"

@@ -1,0 +1,63 @@
+Name: ns=19;MIXER_01
+Id: 'ns=19;s=Channel1.L85ep-slot1.Global.MIXER_01'
+Type: FolderType
+DisplayName: {"LocaleId":"en","Text":"MIXER_01"}
+Description: {"LocaleId":"en","Text":""}
+ReferenceType: Organizes
+Children:
+- Name: ns=19;Val_Fdbk
+  Id: 'ns=19;s=Channel1.L85ep-slot1.Global.MIXER_01.Val_Fdbk'
+  Type: BaseVariableType
+  DataType: Int32
+  DisplayName: {"LocaleId":"en","Text":"Val_Fdbk"}
+  Description: {"LocaleId":"en","Text":""}
+  Value: 0
+- Name: ns=19;Val_LastFaultCode
+  Id: 'ns=19;s=Channel1.L85ep-slot1.Global.MIXER_01.Val_LastFaultCode'
+  Type: BaseVariableType
+  DataType: Int32
+  DisplayName: {"LocaleId":"en","Text":"Val_LastFaultCode"}
+  Description: {"LocaleId":"en","Text":""}
+  Value: 0
+- Name: ns=19;Val_Power
+  Id: 'ns=19;s=Channel1.L85ep-slot1.Global.MIXER_01.Val_Power'
+  Type: BaseVariableType
+  DataType: Float
+  DisplayName: {"LocaleId":"en","Text":"Val_Power"}
+  Description: {"LocaleId":"en","Text":""}
+  Value: 11.149834632873535
+- Name: ns=19;Val_RunStatus
+  Id: 'ns=19;s=Channel1.L85ep-slot1.Global.MIXER_01.Val_RunStatus'
+  Type: BaseVariableType
+  DataType: Int32
+  DisplayName: {"LocaleId":"en","Text":"Val_RunStatus"}
+  Description: {"LocaleId":"en","Text":""}
+  Value: 0
+- Name: ns=19;Val_Speed
+  Id: 'ns=19;s=Channel1.L85ep-slot1.Global.MIXER_01.Val_Speed'
+  Type: BaseVariableType
+  DataType: Float
+  DisplayName: {"LocaleId":"en","Text":"Val_Speed"}
+  Description: {"LocaleId":"en","Text":""}
+  Value: 2106.253173828125
+- Name: ns=19;Val_SpeedFdbk
+  Id: 'ns=19;s=Channel1.L85ep-slot1.Global.MIXER_01.Val_SpeedFdbk'
+  Type: BaseVariableType
+  DataType: Float
+  DisplayName: {"LocaleId":"en","Text":"Val_SpeedFdbk"}
+  Description: {"LocaleId":"en","Text":""}
+  Value: 0.0
+- Name: ns=19;Val_SpeedRef
+  Id: 'ns=19;s=Channel1.L85ep-slot1.Global.MIXER_01.Val_SpeedRef'
+  Type: BaseVariableType
+  DataType: Float
+  DisplayName: {"LocaleId":"en","Text":"Val_SpeedRef"}
+  Description: {"LocaleId":"en","Text":""}
+  Value: 0.0
+- Name: ns=19;Val_Torque
+  Id: 'ns=19;s=Channel1.L85ep-slot1.Global.MIXER_01.Val_Torque'
+  Type: BaseVariableType
+  DataType: Float
+  DisplayName: {"LocaleId":"en","Text":"Val_Torque"}
+  Description: {"LocaleId":"en","Text":""}
+  Value: 52.1998291015625

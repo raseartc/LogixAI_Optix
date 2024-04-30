@@ -1,0 +1,1200 @@
+Name: 'Program:P03_LiftBelt_Analysis'
+Type: FolderType
+Children:
+- Name: Cmd_StartAI
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P03_LiftBelt_Analysis.Cmd_StartAI"
+- Name: LogixAI_Connection
+  Type: LiftBelt_MotorPWR
+  DataType: LiftBelt_MotorPWR
+  Children:
+  - Name: AdditionalCommands
+    Type: LogixAI_AdditionalCommands
+    DataType: LogixAI_AdditionalCommands
+    Children:
+    - Name: ClearFaults
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P03_LiftBelt_Analysis.LogixAI_Connection.AdditionalCommands.ClearFaults"
+    - Name: ModelTraining
+      Type: LogixAI_ModelTraining
+      DataType: LogixAI_ModelTraining
+      Children:
+      - Name: Clear
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Value: 0
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:P03_LiftBelt_Analysis.LogixAI_Connection.AdditionalCommands.ModelTraining.Clear"
+      - Name: Confirm
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Value: 0
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:P03_LiftBelt_Analysis.LogixAI_Connection.AdditionalCommands.ModelTraining.Confirm"
+  - Name: Calculate
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.LogixAI_Connection.Calculate"
+  - Name: Calculations
+    Type: LogixAI_Calculations
+    DataType: LogixAI_Calculations
+    Children:
+    - Name: ActualValue
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P03_LiftBelt_Analysis.LogixAI_Connection.Calculations.ActualValue"
+    - Name: PredictedValue
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P03_LiftBelt_Analysis.LogixAI_Connection.Calculations.PredictedValue"
+    - Name: RelativeError
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P03_LiftBelt_Analysis.LogixAI_Connection.Calculations.RelativeError"
+    - Name: Success
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P03_LiftBelt_Analysis.LogixAI_Connection.Calculations.Success"
+  - Name: Command
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.LogixAI_Connection.Command"
+  - Name: CommandCode
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.LogixAI_Connection.CommandCode"
+  - Name: DataSampleSize
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.LogixAI_Connection.DataSampleSize"
+  - Name: FaultCode
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.LogixAI_Connection.FaultCode"
+  - Name: Reset
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.LogixAI_Connection.Reset"
+  - Name: State
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.LogixAI_Connection.State"
+  - Name: Train
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.LogixAI_Connection.Train"
+  - Name: Training
+    Type: LogixAI_Training
+    DataType: LogixAI_Training
+    Children:
+    - Name: Confidence
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P03_LiftBelt_Analysis.LogixAI_Connection.Training.Confidence"
+    - Name: MeanAbsoluteError
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P03_LiftBelt_Analysis.LogixAI_Connection.Training.MeanAbsoluteError"
+- Name: Cmd_Reset
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P03_LiftBelt_Analysis.Cmd_Reset"
+- Name: Sts_CalculateMode
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P03_LiftBelt_Analysis.Sts_CalculateMode"
+- Name: Cmd_TrainingMode
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P03_LiftBelt_Analysis.Cmd_TrainingMode"
+- Name: Cmd_CalculateMode
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P03_LiftBelt_Analysis.Cmd_CalculateMode"
+- Name: Sts_AITraining
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P03_LiftBelt_Analysis.Sts_AITraining"
+- Name: Sts_AICalculating
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P03_LiftBelt_Analysis.Sts_AICalculating"
+- Name: Cmd_StopAI
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P03_LiftBelt_Analysis.Cmd_StopAI"
+- Name: Sts_LineFaulted
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P03_LiftBelt_Analysis.Sts_LineFaulted"
+- Name: Sts_TrainingMode
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P03_LiftBelt_Analysis.Sts_TrainingMode"
+- Name: Cmd_SlipMode
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P03_LiftBelt_Analysis.Cmd_SlipMode"
+- Name: Cmd_NormalMode
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P03_LiftBelt_Analysis.Cmd_NormalMode"
+- Name: pInit
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P03_LiftBelt_Analysis.pInit"
+- Name: Sts_SlipMode
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P03_LiftBelt_Analysis.Sts_SlipMode"
+- Name: Sts_NormalMode
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P03_LiftBelt_Analysis.Sts_NormalMode"
+- Name: pTimer_100ms
+  Type: TIMER
+  DataType: TIMER
+  Children:
+  - Name: ACC
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.pTimer_100ms.ACC"
+  - Name: DN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.pTimer_100ms.DN"
+  - Name: EN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.pTimer_100ms.EN"
+  - Name: PRE
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.pTimer_100ms.PRE"
+  - Name: TT
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.pTimer_100ms.TT"
+- Name: LiftBelt_sample
+  Type: LiftIO
+  DataType: LiftIO
+  Children:
+  - Name: CartonWeight
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.LiftBelt_sample.CartonWeight"
+  - Name: LiftAngle
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.LiftBelt_sample.LiftAngle"
+  - Name: LineSpeed
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.LiftBelt_sample.LineSpeed"
+  - Name: MotorCurrent
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.LiftBelt_sample.MotorCurrent"
+- Name: TON_TempLatch
+  Type: TIMER
+  DataType: TIMER
+  Children:
+  - Name: ACC
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.TON_TempLatch.ACC"
+  - Name: DN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.TON_TempLatch.DN"
+  - Name: EN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.TON_TempLatch.EN"
+  - Name: PRE
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.TON_TempLatch.PRE"
+  - Name: TT
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.TON_TempLatch.TT"
+- Name: pBelt_Model
+  Type: Belt_Model
+  DataType: Belt_Model
+  Children:
+  - Name: AI_Detect
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.pBelt_Model.AI_Detect"
+  - Name: ANGLE_DEG
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.pBelt_Model.ANGLE_DEG"
+  - Name: ANGLE_RAD
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.pBelt_Model.ANGLE_RAD"
+  - Name: CARTON_WEIGHT
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.pBelt_Model.CARTON_WEIGHT"
+  - Name: Defect_In_Progress
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.pBelt_Model.Defect_In_Progress"
+  - Name: DFTCTR
+    Type: COUNTER
+    DataType: COUNTER
+    Children:
+    - Name: ACC
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P03_LiftBelt_Analysis.pBelt_Model.DFTCTR.ACC"
+    - Name: CD
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P03_LiftBelt_Analysis.pBelt_Model.DFTCTR.CD"
+    - Name: CU
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P03_LiftBelt_Analysis.pBelt_Model.DFTCTR.CU"
+    - Name: DN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P03_LiftBelt_Analysis.pBelt_Model.DFTCTR.DN"
+    - Name: OV
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P03_LiftBelt_Analysis.pBelt_Model.DFTCTR.OV"
+    - Name: PRE
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P03_LiftBelt_Analysis.pBelt_Model.DFTCTR.PRE"
+    - Name: UN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P03_LiftBelt_Analysis.pBelt_Model.DFTCTR.UN"
+  - Name: LINE_SPEED
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.pBelt_Model.LINE_SPEED"
+  - Name: MOTOR_CURRENT
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.pBelt_Model.MOTOR_CURRENT"
+  - Name: MOTOR_POWER
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.pBelt_Model.MOTOR_POWER"
+  - Name: MOTOR_VOLT
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.pBelt_Model.MOTOR_VOLT"
+  - Name: New_Belt_Slip_Chance
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.pBelt_Model.New_Belt_Slip_Chance"
+  - Name: Num_Runs
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.pBelt_Model.Num_Runs"
+  - Name: Num_Slips
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.pBelt_Model.Num_Slips"
+  - Name: SINE_ANGLE
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.pBelt_Model.SINE_ANGLE"
+  - Name: Slip_Chance
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.pBelt_Model.Slip_Chance"
+  - Name: Slip_Damage
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.pBelt_Model.Slip_Damage"
+  - Name: Slip_Till_Fix
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.pBelt_Model.Slip_Till_Fix"
+  - Name: TORQUE
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.pBelt_Model.TORQUE"
+  - Name: Wear_Threshold
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.pBelt_Model.Wear_Threshold"
+  - Name: Wheel_Radius
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.pBelt_Model.Wheel_Radius"
+- Name: pDataCache
+  Type: DataCache
+  DataType: DataCache
+  Children:
+  - Name: sigwait
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.pDataCache.sigwait"
+  - Name: smptmr
+    Type: TIMER
+    DataType: TIMER
+    Children:
+    - Name: ACC
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P03_LiftBelt_Analysis.pDataCache.smptmr.ACC"
+    - Name: DN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P03_LiftBelt_Analysis.pDataCache.smptmr.DN"
+    - Name: EN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P03_LiftBelt_Analysis.pDataCache.smptmr.EN"
+    - Name: PRE
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P03_LiftBelt_Analysis.pDataCache.smptmr.PRE"
+    - Name: TT
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P03_LiftBelt_Analysis.pDataCache.smptmr.TT"
+  - Name: takesample
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.pDataCache.takesample"
+  - Name: TSTR
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.pDataCache.TSTR"
+  - Name: TVAL
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.pDataCache.TVAL"
+- Name: pGenSigData
+  Type: GenSig
+  DataType: GenSig
+  Children:
+  - Name: CONA
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.pGenSigData.CONA"
+  - Name: CONC
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.pGenSigData.CONC"
+  - Name: CONM
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.pGenSigData.CONM"
+  - Name: CONR
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.pGenSigData.CONR"
+  - Name: COSSLA
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.pGenSigData.COSSLA"
+  - Name: COSW
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.pGenSigData.COSW"
+  - Name: modSQW
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.pGenSigData.modSQW"
+  - Name: RANDFR
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.pGenSigData.RANDFR"
+  - Name: RCTR
+    Type: COUNTER
+    DataType: COUNTER
+    Children:
+    - Name: ACC
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P03_LiftBelt_Analysis.pGenSigData.RCTR.ACC"
+    - Name: CD
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P03_LiftBelt_Analysis.pGenSigData.RCTR.CD"
+    - Name: CU
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P03_LiftBelt_Analysis.pGenSigData.RCTR.CU"
+    - Name: DN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P03_LiftBelt_Analysis.pGenSigData.RCTR.DN"
+    - Name: OV
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P03_LiftBelt_Analysis.pGenSigData.RCTR.OV"
+    - Name: PRE
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P03_LiftBelt_Analysis.pGenSigData.RCTR.PRE"
+    - Name: UN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P03_LiftBelt_Analysis.pGenSigData.RCTR.UN"
+  - Name: SIMTmr
+    Type: TIMER
+    DataType: TIMER
+    Children:
+    - Name: ACC
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P03_LiftBelt_Analysis.pGenSigData.SIMTmr.ACC"
+    - Name: DN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P03_LiftBelt_Analysis.pGenSigData.SIMTmr.DN"
+    - Name: EN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P03_LiftBelt_Analysis.pGenSigData.SIMTmr.EN"
+    - Name: PRE
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P03_LiftBelt_Analysis.pGenSigData.SIMTmr.PRE"
+    - Name: TT
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P03_LiftBelt_Analysis.pGenSigData.SIMTmr.TT"
+  - Name: SINF
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.pGenSigData.SINF"
+  - Name: SINFLA
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.pGenSigData.SINFLA"
+  - Name: SINSLA
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.pGenSigData.SINSLA"
+  - Name: SINW
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.pGenSigData.SINW"
+  - Name: SQF
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.pGenSigData.SQF"
+  - Name: SQW0
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.pGenSigData.SQW0"
+  - Name: SQWTmr
+    Type: TIMER
+    DataType: TIMER
+    Children:
+    - Name: ACC
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P03_LiftBelt_Analysis.pGenSigData.SQWTmr.ACC"
+    - Name: DN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P03_LiftBelt_Analysis.pGenSigData.SQWTmr.DN"
+    - Name: EN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P03_LiftBelt_Analysis.pGenSigData.SQWTmr.EN"
+    - Name: PRE
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P03_LiftBelt_Analysis.pGenSigData.SQWTmr.PRE"
+    - Name: TT
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P03_LiftBelt_Analysis.pGenSigData.SQWTmr.TT"
+- Name: ptrncount
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P03_LiftBelt_Analysis.ptrncount"
+- Name: Sts_Slipping
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P03_LiftBelt_Analysis.Sts_Slipping"
+- Name: Sts_ConveyorState
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P03_LiftBelt_Analysis.Sts_ConveyorState"
+- Name: Control_Conveyor
+  Type: ConveyorControl
+  DataType: ConveyorControl
+  Children:
+  - Name: ai_mode
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.Control_Conveyor.ai_mode"
+  - Name: DEVICE_IO
+    Type: IOSIG
+    DataType: IOSIG
+    Children:
+    - Name: SQWAVE_FAST0
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P03_LiftBelt_Analysis.Control_Conveyor.DEVICE_IO.SQWAVE_FAST0"
+    - Name: WAVE_FAST0
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P03_LiftBelt_Analysis.Control_Conveyor.DEVICE_IO.WAVE_FAST0"
+    - Name: WAVE_SLOW0
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P03_LiftBelt_Analysis.Control_Conveyor.DEVICE_IO.WAVE_SLOW0"
+    - Name: WAVE_SLOW1
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P03_LiftBelt_Analysis.Control_Conveyor.DEVICE_IO.WAVE_SLOW1"
+  - Name: GENRVAL
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.Control_Conveyor.GENRVAL"
+  - Name: LINE_FAULT
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.Control_Conveyor.LINE_FAULT"
+  - Name: RANDVAL
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.Control_Conveyor.RANDVAL"
+  - Name: RUNALL
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.Control_Conveyor.RUNALL"
+  - Name: sample_ready
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P03_LiftBelt_Analysis.Control_Conveyor.sample_ready"

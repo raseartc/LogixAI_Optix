@@ -1,0 +1,20 @@
+Name: Tags
+Type: FolderType
+Children:
+- File: Controller_Tags/Controller_Tags.yaml
+- File: Program_Cooling/Program_Cooling.yaml
+- File: Program_Depositor/Program_Depositor.yaml
+- File: Program_Loader/Program_Loader.yaml
+- File: Program_Mixer/Program_Mixer.yaml
+- File: Program_Oven/Program_Oven.yaml
+- File: Program_P01_Cookie_Analysis/Program_P01_Cookie_Analysis.yaml
+- File: Program_P02_Mixer_Analysis/Program_P02_Mixer_Analysis.yaml
+- File: Program_P03_LiftBelt_Analysis/Program_P03_LiftBelt_Analysis.yaml
+- File: Program_P04_HistoricalData/Program_P04_HistoricalData.yaml
+- File: Program_P05_Line_Control/Program_P05_Line_Control.yaml
+- File: Program_P06_Oven01_Control/Program_P06_Oven01_Control.yaml
+- File: Program_P07_Oven02_Control/Program_P07_Oven02_Control.yaml
+- File: Program_Packer/Program_Packer.yaml
+- File: Program_Palletizer/Program_Palletizer.yaml
+- File: Program_ShrinkWrapper/Program_ShrinkWrapper.yaml
+- File: Program_Wrapper/Program_Wrapper.yaml

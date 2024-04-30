@@ -1,0 +1,9 @@
+Name: Model
+Type: ModelCategoryFolder
+Children:
+- File: Oven/Oven.yaml
+- Name: bool1
+  Id: g=7f4b3027db20910e275315ccdd41ab3e
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false

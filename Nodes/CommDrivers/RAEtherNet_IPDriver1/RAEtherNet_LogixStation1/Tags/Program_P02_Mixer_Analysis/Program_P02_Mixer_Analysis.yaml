@@ -1,0 +1,2831 @@
+Name: 'Program:P02_Mixer_Analysis'
+Type: FolderType
+Children:
+- Name: Cmd_ClearFaults
+  Id: g=30a691a8bca2d4901dda6b7c7a7ba175
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P02_Mixer_Analysis.Cmd_ClearFaults"
+- Name: AnomalyTimer
+  Type: TIMER
+  DataType: TIMER
+  Children:
+  - Name: ACC
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.AnomalyTimer.ACC"
+  - Name: DN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.AnomalyTimer.DN"
+  - Name: EN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.AnomalyTimer.EN"
+  - Name: PRE
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.AnomalyTimer.PRE"
+  - Name: TT
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.AnomalyTimer.TT"
+- Name: Prediction1
+  Type: raC_Dvc_LOGIXAI_Prediction
+  DataType: raC_Dvc_LOGIXAI_Prediction
+  Children:
+  - Name: Alm_PredFaulted
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Alm_PredFaulted"
+  - Name: Alm_RelErrorHIAlarm
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Alm_RelErrorHIAlarm"
+  - Name: Alm_RelErrorHIHIAlarm
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Alm_RelErrorHIHIAlarm"
+  - Name: Cmd_AckAlarms
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Cmd_AckAlarms"
+  - Name: Cmd_ClearFaults
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Cmd_ClearFaults"
+  - Name: Cmd_ClearHMIInput
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Cmd_ClearHMIInput"
+  - Name: Cmd_ClearMaxRelError
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Cmd_ClearMaxRelError"
+  - Name: Cmd_ClearTrainData
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Cmd_ClearTrainData"
+  - Name: Cmd_EnableClearTrain
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Cmd_EnableClearTrain"
+  - Name: Cmd_HMIManualTrain
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Cmd_HMIManualTrain"
+  - Name: Cmd_ManCalcSample
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Cmd_ManCalcSample"
+  - Name: Cmd_ManTrainSample
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Cmd_ManTrainSample"
+  - Name: Cmd_PauseAutoCalc
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Cmd_PauseAutoCalc"
+  - Name: Cmd_PauseAutoTrain
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Cmd_PauseAutoTrain"
+  - Name: Cmd_ResetAutoTrain
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Cmd_ResetAutoTrain"
+  - Name: Cmd_StartAutoCalc
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Cmd_StartAutoCalc"
+  - Name: Cmd_StartAutoTrain
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Cmd_StartAutoTrain"
+  - Name: EnableIn
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.EnableIn"
+  - Name: EnableOut
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.EnableOut"
+  - Name: HMI_Tab
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.HMI_Tab"
+  - Name: HMI_Version
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.HMI_Version"
+  - Name: Inf_Lib
+    Type: RAEtherNetIPTag
+    DataType: String
+    Value: ""
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Inf_Lib"
+  - Name: Inf_Type
+    Type: RAEtherNetIPTag
+    DataType: String
+    Value: ""
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Inf_Type"
+  - Name: Inp_Input01
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Inp_Input01"
+  - Name: Inp_Input02
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Inp_Input02"
+  - Name: Inp_Input03
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Inp_Input03"
+  - Name: Inp_Input04
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Inp_Input04"
+  - Name: Inp_Input05
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Inp_Input05"
+  - Name: Inp_Input06
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Inp_Input06"
+  - Name: Inp_Input07
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Inp_Input07"
+  - Name: Inp_Input08
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Inp_Input08"
+  - Name: Inp_Input09
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Inp_Input09"
+  - Name: Inp_Input10
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Inp_Input10"
+  - Name: Inp_Input11
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Inp_Input11"
+  - Name: Inp_Input12
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Inp_Input12"
+  - Name: Inp_Input13
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Inp_Input13"
+  - Name: Inp_Input14
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Inp_Input14"
+  - Name: Inp_Input15
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Inp_Input15"
+  - Name: Inp_Input16
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Inp_Input16"
+  - Name: Inp_Input17
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Inp_Input17"
+  - Name: Inp_Input18
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Inp_Input18"
+  - Name: Inp_Input19
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Inp_Input19"
+  - Name: Inp_Input20
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Inp_Input20"
+  - Name: Inp_StateVariable
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Inp_StateVariable"
+  - Name: Inp_VoI
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Inp_VoI"
+  - Name: Set_AutoCalcDelayTime
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Set_AutoCalcDelayTime"
+  - Name: Set_AutoTrainDelayTime
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Set_AutoTrainDelayTime"
+  - Name: Set_AutoTrainSampleCountSP
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Set_AutoTrainSampleCountSP"
+  - Name: Set_HMIInput01
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Set_HMIInput01"
+  - Name: Set_HMIInput02
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Set_HMIInput02"
+  - Name: Set_HMIInput03
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Set_HMIInput03"
+  - Name: Set_HMIInput04
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Set_HMIInput04"
+  - Name: Set_HMIInput05
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Set_HMIInput05"
+  - Name: Set_HMIInput06
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Set_HMIInput06"
+  - Name: Set_HMIInput07
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Set_HMIInput07"
+  - Name: Set_HMIInput08
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Set_HMIInput08"
+  - Name: Set_HMIInput09
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Set_HMIInput09"
+  - Name: Set_HMIInput10
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Set_HMIInput10"
+  - Name: Set_HMIInput11
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Set_HMIInput11"
+  - Name: Set_HMIInput12
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Set_HMIInput12"
+  - Name: Set_HMIInput13
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Set_HMIInput13"
+  - Name: Set_HMIInput14
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Set_HMIInput14"
+  - Name: Set_HMIInput15
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Set_HMIInput15"
+  - Name: Set_HMIInput16
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Set_HMIInput16"
+  - Name: Set_HMIInput17
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Set_HMIInput17"
+  - Name: Set_HMIInput18
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Set_HMIInput18"
+  - Name: Set_HMIInput19
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Set_HMIInput19"
+  - Name: Set_HMIInput20
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Set_HMIInput20"
+  - Name: Set_HMIState
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Set_HMIState"
+  - Name: Set_HMIVoI
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Set_HMIVoI"
+  - Name: Set_RelErrorHiHiThreshold
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Set_RelErrorHiHiThreshold"
+  - Name: Set_RelErrorHiThreshold
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Set_RelErrorHiThreshold"
+  - Name: Set_TrainingType
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Set_TrainingType"
+  - Name: Set_Trend1YMax
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Set_Trend1YMax"
+  - Name: Set_Trend1YMin
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Set_Trend1YMin"
+  - Name: Set_Trend2YMax
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Set_Trend2YMax"
+  - Name: Set_Trend2YMin
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Set_Trend2YMin"
+  - Name: Set_Trend3YMax
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Set_Trend3YMax"
+  - Name: Set_Trend3YMin
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Set_Trend3YMin"
+  - Name: Sts_AutoCalcActive
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Sts_AutoCalcActive"
+  - Name: Sts_AutoTrainActive
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Sts_AutoTrainActive"
+  - Name: Sts_AutoTrainContinuous
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Sts_AutoTrainContinuous"
+  - Name: Sts_AutoTrainDone
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Sts_AutoTrainDone"
+  - Name: Sts_Calculating
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Sts_Calculating"
+  - Name: Sts_ManTrainInProcess
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Sts_ManTrainInProcess"
+  - Name: Sts_Training
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Sts_Training"
+  - Name: Val_ActualVoI
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Val_ActualVoI"
+  - Name: Val_AutoCalcDelayTime
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Val_AutoCalcDelayTime"
+  - Name: Val_AutoTrainCurrentSample
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Val_AutoTrainCurrentSample"
+  - Name: Val_AutoTrainDelayTime
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Val_AutoTrainDelayTime"
+  - Name: Val_AutoTrainSampleCountSP
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Val_AutoTrainSampleCountSP"
+  - Name: Val_Confidence
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Val_Confidence"
+  - Name: Val_FaultCode
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Val_FaultCode"
+  - Name: Val_LogixAI_Input01
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Val_LogixAI_Input01"
+  - Name: Val_LogixAI_Input02
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Val_LogixAI_Input02"
+  - Name: Val_LogixAI_Input03
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Val_LogixAI_Input03"
+  - Name: Val_LogixAI_Input04
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Val_LogixAI_Input04"
+  - Name: Val_LogixAI_Input05
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Val_LogixAI_Input05"
+  - Name: Val_LogixAI_Input06
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Val_LogixAI_Input06"
+  - Name: Val_LogixAI_Input07
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Val_LogixAI_Input07"
+  - Name: Val_LogixAI_Input08
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Val_LogixAI_Input08"
+  - Name: Val_LogixAI_Input09
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Val_LogixAI_Input09"
+  - Name: Val_LogixAI_Input10
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Val_LogixAI_Input10"
+  - Name: Val_LogixAI_Input11
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Val_LogixAI_Input11"
+  - Name: Val_LogixAI_Input12
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Val_LogixAI_Input12"
+  - Name: Val_LogixAI_Input13
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Val_LogixAI_Input13"
+  - Name: Val_LogixAI_Input14
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Val_LogixAI_Input14"
+  - Name: Val_LogixAI_Input15
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Val_LogixAI_Input15"
+  - Name: Val_LogixAI_Input16
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Val_LogixAI_Input16"
+  - Name: Val_LogixAI_Input17
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Val_LogixAI_Input17"
+  - Name: Val_LogixAI_Input18
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Val_LogixAI_Input18"
+  - Name: Val_LogixAI_Input19
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Val_LogixAI_Input19"
+  - Name: Val_LogixAI_Input20
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Val_LogixAI_Input20"
+  - Name: Val_LogixAI_State
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Val_LogixAI_State"
+  - Name: Val_LogixAI_VoI
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Val_LogixAI_VoI"
+  - Name: Val_MaxRelError
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Val_MaxRelError"
+  - Name: Val_PredictedVoI
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Val_PredictedVoI"
+  - Name: Val_PredictionName
+    Type: RAEtherNetIPTag
+    DataType: String
+    Value: ""
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Val_PredictionName"
+  - Name: Val_RelativeError
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Val_RelativeError"
+  - Name: Val_RelErrorHIHIThreshold
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Val_RelErrorHIHIThreshold"
+  - Name: Val_RelErrorHIThreshold
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Val_RelErrorHIThreshold"
+  - Name: Val_TotalTrainSamples
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Val_TotalTrainSamples"
+  - Name: Val_TrainingType
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Val_TrainingType"
+  - Name: Val_Trend1YMax
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Val_Trend1YMax"
+  - Name: Val_Trend1YMin
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Val_Trend1YMin"
+  - Name: Val_Trend2YMax
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Val_Trend2YMax"
+  - Name: Val_Trend2YMin
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Val_Trend2YMin"
+  - Name: Val_Trend3YMax
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Val_Trend3YMax"
+  - Name: Val_Trend3YMin
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Prediction1.Val_Trend3YMin"
+- Name: Cmd_NormalOperation
+  Id: g=35a0b0e5ee5866f64cfd999e8f53f72f
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P02_Mixer_Analysis.Cmd_NormalOperation"
+- Name: Initialize
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P02_Mixer_Analysis.Initialize"
+- Name: MixerActualPower
+  Type: UDT_SineWave
+  DataType: UDT_SineWave
+  Children:
+  - Name: Amplitude
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.MixerActualPower.Amplitude"
+  - Name: Frequency
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.MixerActualPower.Frequency"
+  - Name: Offset
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.MixerActualPower.Offset"
+  - Name: Phase
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.MixerActualPower.Phase"
+- Name: MixerActualSpeed
+  Type: UDT_SineWave
+  DataType: UDT_SineWave
+  Children:
+  - Name: Amplitude
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.MixerActualSpeed.Amplitude"
+  - Name: Frequency
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.MixerActualSpeed.Frequency"
+  - Name: Offset
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.MixerActualSpeed.Offset"
+  - Name: Phase
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.MixerActualSpeed.Phase"
+- Name: MixerActualTorque
+  Type: UDT_SineWave
+  DataType: UDT_SineWave
+  Children:
+  - Name: Amplitude
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.MixerActualTorque.Amplitude"
+  - Name: Frequency
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.MixerActualTorque.Frequency"
+  - Name: Offset
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.MixerActualTorque.Offset"
+  - Name: Phase
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.MixerActualTorque.Phase"
+- Name: Mode
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P02_Mixer_Analysis.Mode"
+- Name: ONS
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P02_Mixer_Analysis.ONS"
+- Name: Signal1
+  Type: AOI_SineWave
+  DataType: AOI_SineWave
+  Children:
+  - Name: EnableIn
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Signal1.EnableIn"
+  - Name: EnableOut
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Signal1.EnableOut"
+  - Name: Val_YValue
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Signal1.Val_YValue"
+  - Name: Wrk_10msTimer
+    Type: TIMER
+    DataType: TIMER
+    Children:
+    - Name: ACC
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.Signal1.Wrk_10msTimer.ACC"
+    - Name: DN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.Signal1.Wrk_10msTimer.DN"
+    - Name: EN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.Signal1.Wrk_10msTimer.EN"
+    - Name: PRE
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.Signal1.Wrk_10msTimer.PRE"
+    - Name: TT
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.Signal1.Wrk_10msTimer.TT"
+  - Name: Wrk_1Percent
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Signal1.Wrk_1Percent"
+  - Name: Wrk_ActualOffset
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Signal1.Wrk_ActualOffset"
+  - Name: Wrk_LastCommandedSP
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Signal1.Wrk_LastCommandedSP"
+  - Name: Wrk_OffsetDiff
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Signal1.Wrk_OffsetDiff"
+  - Name: Wrk_OffsetDiffABS
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Signal1.Wrk_OffsetDiffABS"
+  - Name: Wrk_Pi
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Signal1.Wrk_Pi"
+  - Name: Wrk_ScratchPad1
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Signal1.Wrk_ScratchPad1"
+  - Name: Wrk_ScratchPad2
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Signal1.Wrk_ScratchPad2"
+  - Name: Wrk_TimeWindow
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Signal1.Wrk_TimeWindow"
+  - Name: Wrk_YValue
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Signal1.Wrk_YValue"
+- Name: Signal2
+  Type: AOI_SineWave
+  DataType: AOI_SineWave
+  Children:
+  - Name: EnableIn
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Signal2.EnableIn"
+  - Name: EnableOut
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Signal2.EnableOut"
+  - Name: Val_YValue
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Signal2.Val_YValue"
+  - Name: Wrk_10msTimer
+    Type: TIMER
+    DataType: TIMER
+    Children:
+    - Name: ACC
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.Signal2.Wrk_10msTimer.ACC"
+    - Name: DN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.Signal2.Wrk_10msTimer.DN"
+    - Name: EN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.Signal2.Wrk_10msTimer.EN"
+    - Name: PRE
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.Signal2.Wrk_10msTimer.PRE"
+    - Name: TT
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.Signal2.Wrk_10msTimer.TT"
+  - Name: Wrk_1Percent
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Signal2.Wrk_1Percent"
+  - Name: Wrk_ActualOffset
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Signal2.Wrk_ActualOffset"
+  - Name: Wrk_LastCommandedSP
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Signal2.Wrk_LastCommandedSP"
+  - Name: Wrk_OffsetDiff
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Signal2.Wrk_OffsetDiff"
+  - Name: Wrk_OffsetDiffABS
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Signal2.Wrk_OffsetDiffABS"
+  - Name: Wrk_Pi
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Signal2.Wrk_Pi"
+  - Name: Wrk_ScratchPad1
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Signal2.Wrk_ScratchPad1"
+  - Name: Wrk_ScratchPad2
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Signal2.Wrk_ScratchPad2"
+  - Name: Wrk_TimeWindow
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Signal2.Wrk_TimeWindow"
+  - Name: Wrk_YValue
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Signal2.Wrk_YValue"
+- Name: Signal3
+  Type: AOI_SineWave
+  DataType: AOI_SineWave
+  Children:
+  - Name: EnableIn
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Signal3.EnableIn"
+  - Name: EnableOut
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Signal3.EnableOut"
+  - Name: Val_YValue
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Signal3.Val_YValue"
+  - Name: Wrk_10msTimer
+    Type: TIMER
+    DataType: TIMER
+    Children:
+    - Name: ACC
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.Signal3.Wrk_10msTimer.ACC"
+    - Name: DN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.Signal3.Wrk_10msTimer.DN"
+    - Name: EN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.Signal3.Wrk_10msTimer.EN"
+    - Name: PRE
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.Signal3.Wrk_10msTimer.PRE"
+    - Name: TT
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.Signal3.Wrk_10msTimer.TT"
+  - Name: Wrk_1Percent
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Signal3.Wrk_1Percent"
+  - Name: Wrk_ActualOffset
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Signal3.Wrk_ActualOffset"
+  - Name: Wrk_LastCommandedSP
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Signal3.Wrk_LastCommandedSP"
+  - Name: Wrk_OffsetDiff
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Signal3.Wrk_OffsetDiff"
+  - Name: Wrk_OffsetDiffABS
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Signal3.Wrk_OffsetDiffABS"
+  - Name: Wrk_Pi
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Signal3.Wrk_Pi"
+  - Name: Wrk_ScratchPad1
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Signal3.Wrk_ScratchPad1"
+  - Name: Wrk_ScratchPad2
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Signal3.Wrk_ScratchPad2"
+  - Name: Wrk_TimeWindow
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Signal3.Wrk_TimeWindow"
+  - Name: Wrk_YValue
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Signal3.Wrk_YValue"
+- Name: SimTimer
+  Type: TIMER
+  DataType: TIMER
+  Children:
+  - Name: ACC
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.SimTimer.ACC"
+  - Name: DN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.SimTimer.DN"
+  - Name: EN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.SimTimer.EN"
+  - Name: PRE
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.SimTimer.PRE"
+  - Name: TT
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.SimTimer.TT"
+- Name: Sts_CycleState
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P02_Mixer_Analysis.Sts_CycleState"
+- Name: TON_500ms
+  Type: TIMER
+  DataType: TIMER
+  ValueRank: OneDimension
+  ArrayDimensions: [10]
+  Children:
+  - Name: 0
+    Type: TIMER
+    DataType: TIMER
+    Children:
+    - Name: ACC
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.TON_500ms[0].ACC"
+    - Name: DN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.TON_500ms[0].DN"
+    - Name: EN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.TON_500ms[0].EN"
+    - Name: PRE
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.TON_500ms[0].PRE"
+    - Name: TT
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.TON_500ms[0].TT"
+  - Name: 1
+    Type: TIMER
+    DataType: TIMER
+    Children:
+    - Name: ACC
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.TON_500ms[1].ACC"
+    - Name: DN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.TON_500ms[1].DN"
+    - Name: EN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.TON_500ms[1].EN"
+    - Name: PRE
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.TON_500ms[1].PRE"
+    - Name: TT
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.TON_500ms[1].TT"
+  - Name: 2
+    Type: TIMER
+    DataType: TIMER
+    Children:
+    - Name: ACC
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.TON_500ms[2].ACC"
+    - Name: DN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.TON_500ms[2].DN"
+    - Name: EN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.TON_500ms[2].EN"
+    - Name: PRE
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.TON_500ms[2].PRE"
+    - Name: TT
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.TON_500ms[2].TT"
+  - Name: 3
+    Type: TIMER
+    DataType: TIMER
+    Children:
+    - Name: ACC
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.TON_500ms[3].ACC"
+    - Name: DN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.TON_500ms[3].DN"
+    - Name: EN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.TON_500ms[3].EN"
+    - Name: PRE
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.TON_500ms[3].PRE"
+    - Name: TT
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.TON_500ms[3].TT"
+  - Name: 4
+    Type: TIMER
+    DataType: TIMER
+    Children:
+    - Name: ACC
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.TON_500ms[4].ACC"
+    - Name: DN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.TON_500ms[4].DN"
+    - Name: EN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.TON_500ms[4].EN"
+    - Name: PRE
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.TON_500ms[4].PRE"
+    - Name: TT
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.TON_500ms[4].TT"
+  - Name: 5
+    Type: TIMER
+    DataType: TIMER
+    Children:
+    - Name: ACC
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.TON_500ms[5].ACC"
+    - Name: DN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.TON_500ms[5].DN"
+    - Name: EN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.TON_500ms[5].EN"
+    - Name: PRE
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.TON_500ms[5].PRE"
+    - Name: TT
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.TON_500ms[5].TT"
+  - Name: 6
+    Type: TIMER
+    DataType: TIMER
+    Children:
+    - Name: ACC
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.TON_500ms[6].ACC"
+    - Name: DN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.TON_500ms[6].DN"
+    - Name: EN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.TON_500ms[6].EN"
+    - Name: PRE
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.TON_500ms[6].PRE"
+    - Name: TT
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.TON_500ms[6].TT"
+  - Name: 7
+    Type: TIMER
+    DataType: TIMER
+    Children:
+    - Name: ACC
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.TON_500ms[7].ACC"
+    - Name: DN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.TON_500ms[7].DN"
+    - Name: EN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.TON_500ms[7].EN"
+    - Name: PRE
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.TON_500ms[7].PRE"
+    - Name: TT
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.TON_500ms[7].TT"
+  - Name: 8
+    Type: TIMER
+    DataType: TIMER
+    Children:
+    - Name: ACC
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.TON_500ms[8].ACC"
+    - Name: DN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.TON_500ms[8].DN"
+    - Name: EN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.TON_500ms[8].EN"
+    - Name: PRE
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.TON_500ms[8].PRE"
+    - Name: TT
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.TON_500ms[8].TT"
+  - Name: 9
+    Type: TIMER
+    DataType: TIMER
+    Children:
+    - Name: ACC
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.TON_500ms[9].ACC"
+    - Name: DN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.TON_500ms[9].DN"
+    - Name: EN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.TON_500ms[9].EN"
+    - Name: PRE
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.TON_500ms[9].PRE"
+    - Name: TT
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:P02_Mixer_Analysis.TON_500ms[9].TT"
+- Name: TON_M2
+  Type: TIMER
+  DataType: TIMER
+  Children:
+  - Name: ACC
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.TON_M2.ACC"
+  - Name: DN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.TON_M2.DN"
+  - Name: EN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.TON_M2.EN"
+  - Name: PRE
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.TON_M2.PRE"
+  - Name: TT
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.TON_M2.TT"
+- Name: TON_M3
+  Type: TIMER
+  DataType: TIMER
+  Children:
+  - Name: ACC
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.TON_M3.ACC"
+  - Name: DN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.TON_M3.DN"
+  - Name: EN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.TON_M3.EN"
+  - Name: PRE
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.TON_M3.PRE"
+  - Name: TT
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.TON_M3.TT"
+- Name: TON_60Sec
+  Type: TIMER
+  DataType: TIMER
+  Children:
+  - Name: ACC
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.TON_60Sec.ACC"
+  - Name: DN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.TON_60Sec.DN"
+  - Name: EN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.TON_60Sec.EN"
+  - Name: PRE
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.TON_60Sec.PRE"
+  - Name: TT
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.TON_60Sec.TT"
+- Name: Mixer_Power
+  Type: Mixer_Power
+  DataType: Mixer_Power
+  Children:
+  - Name: Cmd_AutoCalculate
+    Id: g=e39453a858d9f51395ef30f5c6604fa6
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Mixer_Power.Cmd_AutoCalculate"
+  - Name: Cmd_AutoTrain
+    Id: g=8090d7ba803103dae71d692472093075
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Mixer_Power.Cmd_AutoTrain"
+  - Name: Cmd_ClearTrainingData
+    Id: g=fbaac19aca5ba71af4b31ee0b029218e
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Mixer_Power.Cmd_ClearTrainingData"
+  - Name: Cmd_SingleCalculate
+    Id: g=27df2aefcf916282672955ad3a3452de
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Mixer_Power.Cmd_SingleCalculate"
+  - Name: Cmd_StaticTrain
+    Id: g=c9b7a6abde08d2a169cc74c7eefae184
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Mixer_Power.Cmd_StaticTrain"
+  - Name: Cmd_StopAutoTrain
+    Id: g=2b4a3a2d4349a2861ea12aea8184a6a6
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Mixer_Power.Cmd_StopAutoTrain"
+  - Name: EnableIn
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Mixer_Power.EnableIn"
+  - Name: EnableOut
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Mixer_Power.EnableOut"
+  - Name: Set_ConfiguredDataSampleSize
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Mixer_Power.Set_ConfiguredDataSampleSize"
+  - Name: Set_TrainDelay
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Mixer_Power.Set_TrainDelay"
+  - Name: Sts_AutoCalculate
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Mixer_Power.Sts_AutoCalculate"
+  - Name: Sts_AutoTrainDone
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Mixer_Power.Sts_AutoTrainDone"
+  - Name: Sts_AutoTraining
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Mixer_Power.Sts_AutoTraining"
+  - Name: Sts_StaticTrainInProcess
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Mixer_Power.Sts_StaticTrainInProcess"
+  - Name: Sts_Training
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Mixer_Power.Sts_Training"
+  - Name: Val_ActualValue
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Mixer_Power.Val_ActualValue"
+  - Name: Val_AutoTrainCount
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Mixer_Power.Val_AutoTrainCount"
+  - Name: Val_Confidence
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Mixer_Power.Val_Confidence"
+  - Name: Val_ConfiguredDataSampleSize
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Mixer_Power.Val_ConfiguredDataSampleSize"
+  - Name: Val_DataSampleSize
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Mixer_Power.Val_DataSampleSize"
+  - Name: Val_Error
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Mixer_Power.Val_Error"
+  - Name: Val_PredictedValue
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Mixer_Power.Val_PredictedValue"
+  - Name: Val_TrainCount
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Mixer_Power.Val_TrainCount"
+  - Name: Val_TrainDelay
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:P02_Mixer_Analysis.Mixer_Power.Val_TrainDelay"
+- Name: Cmd_Anomaly
+  Id: g=658f5da326952514e52ad35f67230fa5
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P02_Mixer_Analysis.Cmd_Anomaly"
