@@ -1423,3 +1423,23 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Program:P05_Line_Control.WD_HIST[9].TimeStamp"
+  - Name: Last_Scan
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Last_Scan"
+  - Name: TimeStamp
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    ValueRank: OneDimension
+    ArrayDimensions: [7]
+    Value: [0,0,0,0,0,0,0]
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "TimeStamp"
