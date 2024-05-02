@@ -148,10 +148,10 @@ Project:
    Module: FTOptix.RAEtherNetIP.Net
    Version: 2.1
  Statistics:
-  TotalNodeCount: 127757
-  Objects: 2028
+  TotalNodeCount: 127762
+  Objects: 2029
   ObjectTypes: 18
-  Variables: 125575
+  Variables: 125579
   VariableTypes: 68
   DataTypes: 68
   Methods: 0
