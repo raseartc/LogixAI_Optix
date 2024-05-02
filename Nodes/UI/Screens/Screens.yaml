@@ -16161,3 +16161,11 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 80.0
+  - Name: Label1
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"Label1"}
