@@ -1225,6 +1225,16 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:P02_Mixer_Analysis.Prediction1.Val_Trend3YMin"
+- Name: Cmd_Auto_Anomaly
+  Id: g=ea12ca795393f8296200b003562c84a0
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:P02_Mixer_Analysis.Cmd_Auto_Anomaly"
 - Name: Cmd_NormalOperation
   Id: g=35a0b0e5ee5866f64cfd999e8f53f72f
   Type: RAEtherNetIPTag

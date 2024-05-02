@@ -2,42 +2,10 @@ Name: DataStores
 Type: DataStoresCategoryFolder
 Children:
 - Name: SQLite
-  Id: g=1e851905124247ac8b5f814171d94249
   Type: SQLiteStore
   Children:
   - Name: Tables
     Type: BaseObjectType
-    Children:
-    - Name: DataLog1
-      Type: SQLiteStoreTable
-      Children:
-      - Class: Reference
-        Target: ns=11;i=12
-        Direction: Forward
-      - Class: Reference
-        Target: ns=11;i=15
-        Direction: Forward
-      - Class: Reference
-        Target: ns=11;i=21
-        Direction: Forward
-      - Class: Reference
-        Target: ns=11;i=20
-        Direction: Forward
-      - Name: Columns
-        Type: BaseObjectType
-        Children:
-        - Name: Timestamp
-          Type: StoreColumn
-          DataType: UtcTime
-          Value: "1601-01-01T00:00:00.0000000"
-        - Name: LocalTimestamp
-          Type: StoreColumn
-          DataType: DateTime
-          Value: "1601-01-01T00:00:00.0000000"
-        - Name: Val_Error
-          Type: StoreColumn
-          DataType: Float
-          Value: 0.0
   - Class: Reference
     Target: ns=12;i=30
     Direction: Forward
@@ -99,3 +67,261 @@ Children:
   - Class: Reference
     Target: ns=11;i=59
     Direction: Forward
+- Name: ODBCLogixAI
+  Id: g=4a4b26d6d8e54a426e4b7adad4d03836
+  Type: ODBCStore
+  Children:
+  - Name: Tables
+    Type: BaseObjectType
+    Children:
+    - Name: DataLog1
+      Type: ODBCStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=11;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Val_Error
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Oven01Temp
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Oven02Temp
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: OvenControlLineSpeed
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: CQIPredictedValue
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: CQIQualityMax
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: CQIQualityMin
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: CQIValConfidence
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Mixer1ValConfidence
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: CQIActualValue
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: CQIValError
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: CQITrainCount
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: Mixer1ActualValue
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Mixer1AutoTrainCount
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: Mixer1PredictedValue
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: CookieDiameter
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: CookieHeight
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: CookieExitTemperature
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Mixer1Power
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Mixer1Speed
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Mixer1Torque
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: MixerValError
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+    - Name: AlarmsEventLogger1
+      Type: ODBCStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=11;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: ActiveState_Id
+          Type: StoreColumn
+          DataType: Boolean
+          Value: false
+        - Name: AckedState_Id
+          Type: StoreColumn
+          DataType: Boolean
+          Value: false
+        - Name: ConfirmedState_Id
+          Type: StoreColumn
+          DataType: Boolean
+          Value: false
+        - Name: ConditionName
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: EnabledState_Id
+          Type: StoreColumn
+          DataType: Boolean
+          Value: false
+        - Name: SourceName
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: Time
+          Type: StoreColumn
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: 'Message_en-US'
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: Severity
+          Type: StoreColumn
+          DataType: UInt16
+          Value: 0
+        - Name: LocalTime
+          Type: StoreColumn
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
+  - Name: Type
+    Type: PropertyType
+    DataType: DBMSType
+    Value: 2
+  - Name: Username
+    Type: PropertyType
+    DataType: String
+    Value: "sa"
+  - Name: Password
+    Type: PropertyType
+    DataType: Password
+    Value: "R@ckwell123"
+  - Name: MaxColumnNameLength
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+    Value: 0
+  - Name: MaxColumnCount
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+    Value: 0
+  - Name: DataTypeCompatibilityMap
+    Type: BaseDataVariableType
+    DataType: NodeId
+    AccessLevel: Read
+    ValueRank: OneOrMoreDimensions
+    ArrayDimensions: [0,0]
+    Value: {"Type":12,"Dimensions":[0,0],"Body":[]}
+  - Name: Status
+    Type: PropertyType
+    DataType: StoreStatus
+    AccessLevel: Read
+    Value: 2
+  - Class: Reference
+    Target: ns=11;i=22
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=6
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=8
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=25
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=38
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=41
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=57
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=59
+    Direction: Forward
+  - Name: Server
+    Type: PropertyType
+    DataType: String
+    Value: "192.168.46.128"
+  - Name: Port
+    Type: PropertyType
+    DataType: UInt16
+    Value: 1433
+  - Name: Database
+    Type: PropertyType
+    DataType: String
+    Value: "LogixAI"

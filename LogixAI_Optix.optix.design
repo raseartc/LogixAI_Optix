@@ -45,6 +45,14 @@ Project:
   17:
    Uri: 'a1d28b0c30b26b7ff378a6955948c063#ThingWorx Kepware Server'
    ServerUri: a1d28b0c30b26b7ff378a6955948c063
+  18:
+   Uri: 'urn:FTOptix:CoreBase:Net'
+   Module: FTOptix.CoreBase.Net
+   Version: 1.1
+  19:
+   Uri: 'urn:FTOptix:NetLogic'
+   Module: FTOptix.NetLogic
+   Version: 1.0
  Statistics:
   TotalNodeCount: 8
   Objects: 2
