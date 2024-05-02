@@ -16134,3 +16134,7 @@ Children:
       DataType: VerticalAlignment
       ModellingRule: Optional
       Value: 3
+- Name: Screen1
+  Id: g=c6d7f41e25bb584c2e0a7fcda53c1a93
+  Supertype: Screen
+  ReferenceType: HasComponent
