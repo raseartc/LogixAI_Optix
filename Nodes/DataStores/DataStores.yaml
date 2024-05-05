@@ -316,7 +316,7 @@ Children:
   - Name: Server
     Type: PropertyType
     DataType: String
-    Value: "192.168.46.128"
+    Value: "561TLX3"
   - Name: Port
     Type: PropertyType
     DataType: UInt16

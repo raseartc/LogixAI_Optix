@@ -1,2 +1,57 @@
 Name: NetLogic
 Type: NetLogicCategoryFolder
+Children:
+- Name: LogixAILogic
+  Type: NetLogic
+  Children:
+  - Name: MyDatabase
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/LogixAI_Optix/DataStores/ODBCLogixAI"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/Store"
+  - Name: NoData1
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: NoData2
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: NoData3
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: NoData4
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: NoData5
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Class: Method
+    Name: FTMetricsReadData
+  - Name: NoData6
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: NoData7
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: NoData8
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: NoData9
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: NoData10
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0

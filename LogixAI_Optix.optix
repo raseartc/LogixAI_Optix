@@ -148,15 +148,15 @@ Project:
    Module: FTOptix.RAEtherNetIP.Net
    Version: 2.1
  Statistics:
-  TotalNodeCount: 128726
-  Objects: 2030
+  TotalNodeCount: 129238
+  Objects: 2068
   ObjectTypes: 18
-  Variables: 126542
+  Variables: 127013
   VariableTypes: 68
   DataTypes: 68
-  Methods: 0
-  References: 142
+  Methods: 3
+  References: 166
   ReferenceTypes: 0
-  Files: 48
+  Files: 49
  Nodes:
  - File: Nodes/LogixAI_Optix.yaml

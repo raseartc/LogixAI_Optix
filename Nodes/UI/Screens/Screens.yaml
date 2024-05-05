@@ -16047,6 +16047,1982 @@ Children:
   Id: g=47b8980e0e626423e24a2e310cbfe881
   Supertype: Screen
   ReferenceType: HasComponent
+  Children:
+  - Name: Rectangle1
+    Type: Rectangle
+    Children:
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 1880.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 330.0
+    - Name: BorderThickness
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 1.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+    - Name: Label1
+      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Alarm Count - Training Confidence - Trained Count Dashboard :"}
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 20.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 10.0
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 25.0
+      - Name: FontWeight
+        Type: BaseDataVariableType
+        DataType: FontWeightEnum
+        ModellingRule: Optional
+        Value: 700
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+        Value: "#008000"
+    - Name: wbMixer1TrainingConfidence
+      Type: WebBrowser
+      Children:
+      - Name: URL
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+        Value: "ns=7;%PROJECTDIR%/eCharts/gauge-Mixer1TrainedConfidence.html"
+      - Class: Reference
+        Target: ns=3;i=354
+        Direction: Forward
+      - Class: Reference
+        Target: ns=3;i=356
+        Direction: Forward
+      - Class: Reference
+        Target: ns=3;i=358
+        Direction: Forward
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 320.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 270.0
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 1000.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 50.0
+      - Name: Opacity
+        Type: BaseVariableType
+        DataType: Float
+        ModellingRule: Optional
+        Value: 100.0
+    - Name: Label2
+      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Mixer1 Power\nTraining Confidence"}
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 1083.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 252.0
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 18.0
+      - Name: TextHorizontalAlignment
+        Type: BaseVariableType
+        DataType: TextHorizontalAlignment
+        ModellingRule: Optional
+        Value: 1
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+        Value: "#008000"
+      - Name: FontWeight
+        Type: BaseDataVariableType
+        DataType: FontWeightEnum
+        ModellingRule: Optional
+        Value: 600
+    - Name: wbCQITrainingConfidence
+      Type: WebBrowser
+      Children:
+      - Name: URL
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+        Value: "ns=7;%PROJECTDIR%/eCharts/gauge-CQITrainedConfidence.html"
+      - Class: Reference
+        Target: ns=3;i=354
+        Direction: Forward
+      - Class: Reference
+        Target: ns=3;i=356
+        Direction: Forward
+      - Class: Reference
+        Target: ns=3;i=358
+        Direction: Forward
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 320.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 270.0
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 1330.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 50.0
+    - Name: CornerRadius
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 15.0
+    - Name: FillColor
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#ffffff"
+    - Name: Label3
+      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"CQI\nTraining Confidence"}
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 1420.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 250.0
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 18.0
+      - Name: TextHorizontalAlignment
+        Type: BaseVariableType
+        DataType: TextHorizontalAlignment
+        ModellingRule: Optional
+        Value: 1
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+        Value: "#008000"
+      - Name: FontWeight
+        Type: BaseDataVariableType
+        DataType: FontWeightEnum
+        ModellingRule: Optional
+        Value: 600
+    - Name: wbTotalAlarmCount
+      Type: WebBrowser
+      Children:
+      - Name: URL
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+        Value: "ns=7;%PROJECTDIR%/eCharts/gauge-TotalAlarmCount.html"
+      - Class: Reference
+        Target: ns=3;i=354
+        Direction: Forward
+      - Class: Reference
+        Target: ns=3;i=356
+        Direction: Forward
+      - Class: Reference
+        Target: ns=3;i=358
+        Direction: Forward
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 320.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 270.0
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 10.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 50.0
+      - Name: Opacity
+        Type: BaseVariableType
+        DataType: Float
+        ModellingRule: Optional
+        Value: 100.0
+    - Name: Label4
+      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Total Alarm Count"}
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 90.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 252.0
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 18.0
+      - Name: TextHorizontalAlignment
+        Type: BaseVariableType
+        DataType: TextHorizontalAlignment
+        ModellingRule: Optional
+        Value: 1
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+        Value: "#008000"
+      - Name: FontWeight
+        Type: BaseDataVariableType
+        DataType: FontWeightEnum
+        ModellingRule: Optional
+        Value: 600
+    - Name: wbMixer1AlarmCount
+      Type: WebBrowser
+      Children:
+      - Name: URL
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+        Value: "ns=7;%PROJECTDIR%/eCharts/gauge-Mixer1AlarmCount.html"
+      - Class: Reference
+        Target: ns=3;i=354
+        Direction: Forward
+      - Class: Reference
+        Target: ns=3;i=356
+        Direction: Forward
+      - Class: Reference
+        Target: ns=3;i=358
+        Direction: Forward
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 320.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 270.0
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 340.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 50.0
+      - Name: Opacity
+        Type: BaseVariableType
+        DataType: Float
+        ModellingRule: Optional
+        Value: 100.0
+    - Name: Label5
+      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Mixer1 Power\nAlarm Count"}
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 440.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 252.0
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 18.0
+      - Name: TextHorizontalAlignment
+        Type: BaseVariableType
+        DataType: TextHorizontalAlignment
+        ModellingRule: Optional
+        Value: 1
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+        Value: "#008000"
+      - Name: FontWeight
+        Type: BaseDataVariableType
+        DataType: FontWeightEnum
+        ModellingRule: Optional
+        Value: 600
+    - Name: wbCQIAlarmCount
+      Type: WebBrowser
+      Children:
+      - Name: URL
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+        Value: "ns=7;%PROJECTDIR%/eCharts/gauge-CQIAlarmCount.html"
+      - Class: Reference
+        Target: ns=3;i=354
+        Direction: Forward
+      - Class: Reference
+        Target: ns=3;i=356
+        Direction: Forward
+      - Class: Reference
+        Target: ns=3;i=358
+        Direction: Forward
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 320.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 270.0
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 670.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 50.0
+      - Name: Opacity
+        Type: BaseVariableType
+        DataType: Float
+        ModellingRule: Optional
+        Value: 100.0
+    - Name: Label6
+      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"CQI\nAlarm Count"}
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 780.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 256.0
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 18.0
+      - Name: TextHorizontalAlignment
+        Type: BaseVariableType
+        DataType: TextHorizontalAlignment
+        ModellingRule: Optional
+        Value: 1
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+        Value: "#008000"
+      - Name: FontWeight
+        Type: BaseDataVariableType
+        DataType: FontWeightEnum
+        ModellingRule: Optional
+        Value: 600
+    - Name: eChartLogic
+      Type: NetLogic
+      WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+      Children:
+      - Name: RefreshTime
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 20
+      - Name: eChart1
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+        Children:
+        - Name: TemplateName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Template-gauge-Mixer1TrainedConfidence.js"
+        - Name: DataName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Mixer1TrainedConfidence.js"
+        - Name: WebName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "wbMixer1TrainingConfidence"
+        - Name: eChartNoStart
+          Type: BaseDataVariableType
+          DataType: Int16
+          Value: 1
+        - Name: eChartNoEnd
+          Type: BaseDataVariableType
+          DataType: Int16
+          Value: 1
+      - Name: eChart2
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+        Children:
+        - Name: TemplateName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Template-gauge-CQITrainedConfidence.js"
+        - Name: DataName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "CQITrainedConfidence.js"
+        - Name: WebName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "wbCQITrainingConfidence"
+        - Name: eChartNoStart
+          Type: BaseDataVariableType
+          DataType: Int16
+          Value: 2
+        - Name: eChartNoEnd
+          Type: BaseDataVariableType
+          DataType: Int16
+          Value: 2
+      - Name: eChart3
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+        Children:
+        - Name: TemplateName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Template-gauge-TotalAlarmCount.js"
+        - Name: DataName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "TotalAlarmCount.js"
+        - Name: WebName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "wbTotalAlarmCount"
+        - Name: eChartNoStart
+          Type: BaseDataVariableType
+          DataType: Int16
+          Value: 3
+        - Name: eChartNoEnd
+          Type: BaseDataVariableType
+          DataType: Int16
+          Value: 3
+      - Name: eChart4
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+        Children:
+        - Name: TemplateName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Template-gauge-Mixer1AlarmCount.js"
+        - Name: DataName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Mixer1AlarmCount.js"
+        - Name: WebName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "wbMixer1AlarmCount"
+        - Name: eChartNoStart
+          Type: BaseDataVariableType
+          DataType: Int16
+          Value: 4
+        - Name: eChartNoEnd
+          Type: BaseDataVariableType
+          DataType: Int16
+          Value: 4
+      - Name: eChart5
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+        Children:
+        - Name: TemplateName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Template-gauge-CQIAlarmCount.js"
+        - Name: DataName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "CQIAlarmCount.js"
+        - Name: WebName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "wbCQIAlarmCount"
+        - Name: eChartNoStart
+          Type: BaseDataVariableType
+          DataType: Int16
+          Value: 5
+        - Name: eChartNoEnd
+          Type: BaseDataVariableType
+          DataType: Int16
+          Value: 5
+      - Name: eChart6
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: false
+        Children:
+        - Name: TemplateName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+        - Name: DataName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+        - Name: WebName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+        - Name: eChartNoStart
+          Type: BaseDataVariableType
+          DataType: Int16
+          Value: 0
+        - Name: eChartNoEnd
+          Type: BaseDataVariableType
+          DataType: Int16
+          Value: 0
+      - Name: eChart7
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: false
+        Children:
+        - Name: TemplateName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+        - Name: DataName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+        - Name: WebName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+        - Name: eChartNoStart
+          Type: BaseDataVariableType
+          DataType: Int16
+          Value: 0
+        - Name: eChartNoEnd
+          Type: BaseDataVariableType
+          DataType: Int16
+          Value: 0
+      - Name: eChart8
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: false
+        Children:
+        - Name: TemplateName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+        - Name: DataName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+        - Name: WebName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+        - Name: eChartNoStart
+          Type: BaseDataVariableType
+          DataType: Int16
+          Value: 0
+        - Name: eChartNoEnd
+          Type: BaseDataVariableType
+          DataType: Int16
+          Value: 0
+      - Name: eChart9
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: false
+        Children:
+        - Name: TemplateName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+        - Name: DataName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+        - Name: WebName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+        - Name: eChartNoStart
+          Type: BaseDataVariableType
+          DataType: Int16
+          Value: 0
+        - Name: eChartNoEnd
+          Type: BaseDataVariableType
+          DataType: Int16
+          Value: 0
+      - Name: eChart10
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: false
+        Children:
+        - Name: TemplateName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+        - Name: DataName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+        - Name: WebName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+        - Name: eChartNoStart
+          Type: BaseDataVariableType
+          DataType: Int16
+          Value: 0
+        - Name: eChartNoEnd
+          Type: BaseDataVariableType
+          DataType: Int16
+          Value: 0
+      - Class: Method
+        Name: RefresheChartGraph
+      - Name: eChartsValue
+        Type: BaseDataVariableType
+        DataType: Float
+        Value: 0.0
+        Children:
+        - Name: eChart1
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          Value: {"Type":10,"Body":0.0}
+          Children:
+          - Name: StringFormatter1
+            Type: StringFormatter
+            Children:
+            - Name: Format
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: {"LocaleId":"","Text":"{0:n2}"}
+            - Name: ns=2;Source0
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "/Objects/LogixAI_Optix/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_LogixStation1/Tags/Program&:P02_Mixer_Analysis/Mixer_Power/Val_Confidence"
+                Children:
+                - Name: Mode
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  ModellingRule: Optional
+                  Value: 2
+            - Name: Mode
+              Type: PropertyType
+              DataType: DynamicLinkMode
+              ReferenceType: HasComponent
+              ModellingRule: Optional
+              Value: 2
+        - Name: eChart2
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          Value: {"Type":10,"Body":0.0}
+          Children:
+          - Name: StringFormatter1
+            Type: StringFormatter
+            Children:
+            - Name: Format
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: {"LocaleId":"en-US","Text":"{0:n2}"}
+            - Name: ns=2;Source0
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "/Objects/LogixAI_Optix/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_LogixStation1/Tags/Program&:P01_Cookie_Analysis/CQI_Calc/Val_Confidence"
+                Children:
+                - Name: Mode
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  ModellingRule: Optional
+                  Value: 2
+            - Name: Mode
+              Type: PropertyType
+              DataType: DynamicLinkMode
+              ReferenceType: HasComponent
+              ModellingRule: Optional
+              Value: 2
+        - Name: eChart3
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          Value: {"Type":10,"Body":0.0}
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/LogixAI_Optix/Model/LogixAIDashboard/LogixAIData/TotalAlarmCount"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+        - Name: eChart4
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          Value: {"Type":10,"Body":0.0}
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/LogixAI_Optix/Model/LogixAIDashboard/LogixAIData/Mixer01PowerAlarmCount"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+        - Name: eChart5
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          Value: {"Type":10,"Body":0.0}
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/LogixAI_Optix/Model/LogixAIDashboard/LogixAIData/CQIAlarmCount"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+        - Name: eChart6
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          Value: {"Type":10,"Body":0.0}
+        - Name: eChart7
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          Value: {"Type":10,"Body":0.0}
+        - Name: eChart8
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          Value: {"Type":10,"Body":0.0}
+        - Name: eChart9
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          Value: {"Type":10,"Body":0.0}
+        - Name: eChart10
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          Value: {"Type":10,"Body":0.0}
+        - Name: eChart11
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          Value: {"Type":10,"Body":0.0}
+        - Name: eChart12
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          Value: {"Type":10,"Body":0.0}
+        - Name: eChart13
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          Value: {"Type":10,"Body":0.0}
+        - Name: eChart14
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          Value: {"Type":10,"Body":0.0}
+        - Name: eChart15
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          Value: {"Type":10,"Body":0.0}
+        - Name: eChart16
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          Value: {"Type":10,"Body":0.0}
+        - Name: eChart17
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          Value: {"Type":10,"Body":0.0}
+        - Name: eChart18
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          Value: {"Type":10,"Body":0.0}
+        - Name: eChart19
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          Value: {"Type":10,"Body":0.0}
+        - Name: eChart20
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          Value: {"Type":10,"Body":0.0}
+    - Name: Rectangle1
+      Type: Rectangle
+      Children:
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 200.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 90.0
+      - Name: BorderThickness
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 1.0
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 1660.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 80.0
+      - Name: Label7
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/LogixAI_Optix/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_LogixStation1/Tags/Program&:P02_Mixer_Analysis/Mixer_Power/Val_AutoTrainCount"
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: -10.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 10.0
+        - Name: FontSize
+          Type: BaseDataVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 55.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 70.0
+        - Name: TextColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#ffffff"
+        - Name: TextHorizontalAlignment
+          Type: BaseVariableType
+          DataType: TextHorizontalAlignment
+          ModellingRule: Optional
+          Value: 1
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 170.0
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+          Value: 2
+        - Name: RightMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 0.0
+      - Name: CornerRadius
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 20.0
+      - Name: FillColor
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+        Value: "#008000"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+        Value: "#00000000"
+    - Name: Label7
+      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Mixer1 Trained Count"}
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 1670.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 50.0
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 18.0
+      - Name: TextHorizontalAlignment
+        Type: BaseVariableType
+        DataType: TextHorizontalAlignment
+        ModellingRule: Optional
+        Value: 1
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+        Value: "#008000"
+      - Name: FontWeight
+        Type: BaseDataVariableType
+        DataType: FontWeightEnum
+        ModellingRule: Optional
+        Value: 600
+    - Name: Rectangle2
+      Type: Rectangle
+      Children:
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 200.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 90.0
+      - Name: BorderThickness
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 1.0
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 1660.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 220.0
+      - Name: Label7
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/LogixAI_Optix/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_LogixStation1/Tags/Program&:P01_Cookie_Analysis/CQI_Calc/Val_TrainCount"
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: -10.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 10.0
+        - Name: FontSize
+          Type: BaseDataVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 55.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 70.0
+        - Name: TextColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#ffffff"
+        - Name: TextHorizontalAlignment
+          Type: BaseVariableType
+          DataType: TextHorizontalAlignment
+          ModellingRule: Optional
+          Value: 1
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 170.0
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+          Value: 2
+        - Name: RightMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 0.0
+      - Name: CornerRadius
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 20.0
+      - Name: FillColor
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+        Value: "#008000"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+        Value: "#00000000"
+    - Name: Label8
+      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"CQI Trained Count"}
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 1670.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 190.0
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 18.0
+      - Name: TextHorizontalAlignment
+        Type: BaseVariableType
+        DataType: TextHorizontalAlignment
+        ModellingRule: Optional
+        Value: 1
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+        Value: "#008000"
+      - Name: FontWeight
+        Type: BaseDataVariableType
+        DataType: FontWeightEnum
+        ModellingRule: Optional
+        Value: 600
+  - Name: Rectangle2
+    Type: Rectangle
+    Children:
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 1880.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 480.0
+    - Name: BorderThickness
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 1.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 360.0
+    - Name: Label1
+      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Alarm Analysis Dashboard :"}
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 20.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 10.0
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 25.0
+      - Name: FontWeight
+        Type: BaseDataVariableType
+        DataType: FontWeightEnum
+        ModellingRule: Optional
+        Value: 700
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+        Value: "#008000"
+    - Name: wbAlarmCount
+      Type: WebBrowser
+      Children:
+      - Name: URL
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+        Value: "ns=7;%PROJECTDIR%/eCharts/pie-borderRadius-AlarmCount.html"
+      - Class: Reference
+        Target: ns=3;i=354
+        Direction: Forward
+      - Class: Reference
+        Target: ns=3;i=356
+        Direction: Forward
+      - Class: Reference
+        Target: ns=3;i=358
+        Direction: Forward
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 450.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 370.0
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 10.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 80.0
+    - Name: CornerRadius
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 15.0
+    - Name: Label4
+      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Mixer1 vs CQI Alarm Count"}
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 110.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 440.0
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 18.0
+      - Name: TextHorizontalAlignment
+        Type: BaseVariableType
+        DataType: TextHorizontalAlignment
+        ModellingRule: Optional
+        Value: 1
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+        Value: "#008000"
+      - Name: FontWeight
+        Type: BaseDataVariableType
+        DataType: FontWeightEnum
+        ModellingRule: Optional
+        Value: 600
+    - Name: wbAlarmState
+      Type: WebBrowser
+      Children:
+      - Name: URL
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+        Value: "ns=7;%PROJECTDIR%/eCharts/pie-borderRadius-AlarmState.html"
+      - Class: Reference
+        Target: ns=3;i=354
+        Direction: Forward
+      - Class: Reference
+        Target: ns=3;i=356
+        Direction: Forward
+      - Class: Reference
+        Target: ns=3;i=358
+        Direction: Forward
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 450.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 370.0
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 460.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 80.0
+    - Name: Label2
+      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Alarms State"}
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 637.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 440.0
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 18.0
+      - Name: TextHorizontalAlignment
+        Type: BaseVariableType
+        DataType: TextHorizontalAlignment
+        ModellingRule: Optional
+        Value: 1
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+        Value: "#008000"
+      - Name: FontWeight
+        Type: BaseDataVariableType
+        DataType: FontWeightEnum
+        ModellingRule: Optional
+        Value: 600
+    - Name: wbCQITop5Alarm
+      Type: WebBrowser
+      Children:
+      - Name: URL
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+        Value: "ns=7;%PROJECTDIR%/eCharts/bar-dataset-encode-CQITop5Alarm.html"
+      - Class: Reference
+        Target: ns=3;i=354
+        Direction: Forward
+      - Class: Reference
+        Target: ns=3;i=356
+        Direction: Forward
+      - Class: Reference
+        Target: ns=3;i=358
+        Direction: Forward
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 950.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 400.0
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 910.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 30.0
+    - Name: Label3
+      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Top 5 Case Quality Alarm Details"}
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 1295.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 440.0
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 18.0
+      - Name: TextHorizontalAlignment
+        Type: BaseVariableType
+        DataType: TextHorizontalAlignment
+        ModellingRule: Optional
+        Value: 1
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+        Value: "#008000"
+      - Name: FontWeight
+        Type: BaseDataVariableType
+        DataType: FontWeightEnum
+        ModellingRule: Optional
+        Value: 600
+    - Name: eChartLogic
+      Type: NetLogic
+      WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+      Children:
+      - Name: RefreshTime
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 20
+      - Name: eChart1
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+        Children:
+        - Name: TemplateName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Template-pie-borderRadius-AlarmCount.js"
+        - Name: DataName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "AlarmCount.js"
+        - Name: WebName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "wbAlarmCount"
+        - Name: eChartNoStart
+          Type: BaseDataVariableType
+          DataType: Int16
+          Value: 4
+        - Name: eChartNoEnd
+          Type: BaseDataVariableType
+          DataType: Int16
+          Value: 5
+      - Name: eChart2
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+        Children:
+        - Name: TemplateName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Template-pie-borderRadius-AlarmState.js"
+        - Name: DataName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "AlarmState.js"
+        - Name: WebName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "wbAlarmState"
+        - Name: eChartNoStart
+          Type: BaseDataVariableType
+          DataType: Int16
+          Value: 1
+        - Name: eChartNoEnd
+          Type: BaseDataVariableType
+          DataType: Int16
+          Value: 3
+      - Name: eChart3
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+        Children:
+        - Name: TemplateName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Template-bar-dataset-encode-CQITop5Alarm.js"
+        - Name: DataName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "CQITop5Alarm.js"
+        - Name: WebName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "wbCQITop5Alarm"
+        - Name: eChartNoStart
+          Type: BaseDataVariableType
+          DataType: Int16
+          Value: 6
+        - Name: eChartNoEnd
+          Type: BaseDataVariableType
+          DataType: Int16
+          Value: 15
+      - Name: eChart4
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: false
+        Children:
+        - Name: TemplateName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+        - Name: DataName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+        - Name: WebName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+        - Name: eChartNoStart
+          Type: BaseDataVariableType
+          DataType: Int16
+          Value: 0
+        - Name: eChartNoEnd
+          Type: BaseDataVariableType
+          DataType: Int16
+          Value: 0
+      - Name: eChart5
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: false
+        Children:
+        - Name: TemplateName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+        - Name: DataName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+        - Name: WebName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+        - Name: eChartNoStart
+          Type: BaseDataVariableType
+          DataType: Int16
+          Value: 0
+        - Name: eChartNoEnd
+          Type: BaseDataVariableType
+          DataType: Int16
+          Value: 0
+      - Name: eChart6
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: false
+        Children:
+        - Name: TemplateName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+        - Name: DataName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+        - Name: WebName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+        - Name: eChartNoStart
+          Type: BaseDataVariableType
+          DataType: Int16
+          Value: 0
+        - Name: eChartNoEnd
+          Type: BaseDataVariableType
+          DataType: Int16
+          Value: 0
+      - Name: eChart7
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: false
+        Children:
+        - Name: TemplateName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+        - Name: DataName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+        - Name: WebName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+        - Name: eChartNoStart
+          Type: BaseDataVariableType
+          DataType: Int16
+          Value: 0
+        - Name: eChartNoEnd
+          Type: BaseDataVariableType
+          DataType: Int16
+          Value: 0
+      - Name: eChart8
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: false
+        Children:
+        - Name: TemplateName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+        - Name: DataName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+        - Name: WebName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+        - Name: eChartNoStart
+          Type: BaseDataVariableType
+          DataType: Int16
+          Value: 0
+        - Name: eChartNoEnd
+          Type: BaseDataVariableType
+          DataType: Int16
+          Value: 0
+      - Name: eChart9
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: false
+        Children:
+        - Name: TemplateName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+        - Name: DataName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+        - Name: WebName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+        - Name: eChartNoStart
+          Type: BaseDataVariableType
+          DataType: Int16
+          Value: 0
+        - Name: eChartNoEnd
+          Type: BaseDataVariableType
+          DataType: Int16
+          Value: 0
+      - Name: eChart10
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: false
+        Children:
+        - Name: TemplateName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+        - Name: DataName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+        - Name: WebName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+        - Name: eChartNoStart
+          Type: BaseDataVariableType
+          DataType: Int16
+          Value: 0
+        - Name: eChartNoEnd
+          Type: BaseDataVariableType
+          DataType: Int16
+          Value: 0
+      - Class: Method
+        Name: RefresheChartGraph
+      - Name: eChartsValue
+        Type: BaseDataVariableType
+        DataType: Float
+        Value: 0.0
+        Children:
+        - Name: eChart1
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          Value: {"Type":10,"Body":0.0}
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/LogixAI_Optix/Model/LogixAIDashboard/LogixAIData/TotalAckedAlarmCount"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+        - Name: eChart2
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          Value: {"Type":10,"Body":0.0}
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/LogixAI_Optix/Model/LogixAIDashboard/LogixAIData/TotalAlarmCount"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+        - Name: eChart3
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          Value: {"Type":10,"Body":0.0}
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/LogixAI_Optix/Model/LogixAIDashboard/LogixAIData/TotalConfirmedAlarmCount"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+        - Name: eChart4
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          Value: {"Type":10,"Body":0.0}
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/LogixAI_Optix/Model/LogixAIDashboard/LogixAIData/Mixer01PowerAlarmCount"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+        - Name: eChart5
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          Value: {"Type":10,"Body":0.0}
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/LogixAI_Optix/Model/LogixAIDashboard/LogixAIData/CQIAlarmCount"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+        - Name: eChart6
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          Value: {"Type":12,"Body":"0"}
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/LogixAI_Optix/Model/LogixAIDashboard/LogixAIData/CQIAlarmDesc1"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+        - Name: eChart7
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          Value: {"Type":12,"Body":"0"}
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/LogixAI_Optix/Model/LogixAIDashboard/LogixAIData/CQIAlarmDesc2"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+        - Name: eChart8
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          Value: {"Type":12,"Body":"0"}
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/LogixAI_Optix/Model/LogixAIDashboard/LogixAIData/CQIAlarmDesc3"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+        - Name: eChart9
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          Value: {"Type":12,"Body":"0"}
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/LogixAI_Optix/Model/LogixAIDashboard/LogixAIData/CQIAlarmDesc4"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+        - Name: eChart10
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          Value: {"Type":12,"Body":"0"}
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/LogixAI_Optix/Model/LogixAIDashboard/LogixAIData/CQIAlarmDesc5"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+        - Name: eChart11
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          Value: {"Type":10,"Body":0.0}
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/LogixAI_Optix/Model/LogixAIDashboard/LogixAIData/CQIAlarmCount1"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+        - Name: eChart12
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          Value: {"Type":10,"Body":0.0}
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/LogixAI_Optix/Model/LogixAIDashboard/LogixAIData/CQIAlarmCount2"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+        - Name: eChart13
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          Value: {"Type":10,"Body":0.0}
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/LogixAI_Optix/Model/LogixAIDashboard/LogixAIData/CQIAlarmCount3"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+        - Name: eChart14
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          Value: {"Type":10,"Body":0.0}
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/LogixAI_Optix/Model/LogixAIDashboard/LogixAIData/CQIAlarmCount4"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+        - Name: eChart15
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          Value: {"Type":10,"Body":0.0}
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/LogixAI_Optix/Model/LogixAIDashboard/LogixAIData/CQIAlarmCount5"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+        - Name: eChart16
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          Value: {"Type":10,"Body":0.0}
+        - Name: eChart17
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          Value: {"Type":10,"Body":0.0}
+        - Name: eChart18
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          Value: {"Type":10,"Body":0.0}
+        - Name: eChart19
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          Value: {"Type":10,"Body":0.0}
+        - Name: eChart20
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          Value: {"Type":10,"Body":0.0}
 - Name: LogixAI_Mixer1_Dashboard
   Id: g=55db106f10cfb01e6e0d4ce68cc6ec77
   Supertype: Screen
@@ -16134,38 +18110,344 @@ Children:
       DataType: VerticalAlignment
       ModellingRule: Optional
       Value: 3
-- Name: Screen1
-  Id: g=f3742552b431ef6914987427eb595c8d
-  Supertype: Screen
+- Name: MyGauge
+  Id: g=11e90236c5a15fcce81482c48a9b2fe6
+  Supertype: Panel
   ReferenceType: HasComponent
   Children:
-  - Name: TextBox1
-    Type: TextBox
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 200.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 200.0
+  - Name: CircularGauge1
+    Type: CircularGauge
     Children:
-    - Name: Text
+    - Name: Value
       Type: BaseDataVariableType
-      DataType: LocalizedText
-      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      DataType: Float
+      Value: 80.0
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Value"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: MinValue
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 0.0
+    - Name: MaxValue
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 50.0
+    - Name: WarningZones
+      Type: BaseObjectType
+      Children:
+      - Name: WarningZone1
+        Type: WarningZone
+        Children:
+        - Name: From
+          Type: BaseDataVariableType
+          DataType: Float
+          Value: 30.0
+        - Name: To
+          Type: BaseDataVariableType
+          DataType: Float
+          Value: 50.0
+        - Name: Color
+          Type: BaseDataVariableType
+          DataType: Color
+          Value: "#fb1010"
     - Name: Width
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 110.0
-    - Name: LeftMargin
+      Value: 180.0
+    - Name: Height
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 150.0
+      Value: 180.0
+    - Name: StartAngle
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: -90.0
+    - Name: EndAngle
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 90.0
+    - Name: Editable
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ModellingRule: Optional
+      Value: false
+    - Name: MajorTickCount
+      Type: BaseDataVariableType
+      DataType: Float
+      ModellingRule: Optional
+      Value: 0.0
+    - Name: LabelVisible
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ModellingRule: Optional
+      Value: true
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 80.0
-  - Name: Label1
+      Value: 20.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: ValueChangeBehaviour
+      Type: BaseDataVariableType
+      DataType: ValueChangeBehaviour
+      ModellingRule: Optional
+      Value: 0
+    - Name: RightMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
+    - Name: BottomMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
+    - Name: GaugeStyle
+      Type: BaseDataVariableType
+      DataType: String
+      ModellingRule: Optional
+      Value: "Default"
+  - Name: lbTitle
     Type: Label
     Children:
     - Name: Text
       Type: BaseDataVariableType
       DataType: LocalizedText
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Title"
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
       ModellingRule: Optional
-      Value: {"LocaleId":"en-US","Text":"Label1"}
+      Value: 2.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: -28.0
+    - Name: FontSize
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 16.0
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 130.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+    - Name: TextHorizontalAlignment
+      Type: BaseVariableType
+      DataType: TextHorizontalAlignment
+      ModellingRule: Optional
+      Value: 1
+    - Name: TextVerticalAlignment
+      Type: BaseVariableType
+      DataType: TextVerticalAlignment
+      ModellingRule: Optional
+      Value: 1
+    - Name: RightMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
+    - Name: BottomMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
+  - Name: lbValue
+    Type: Label
+    Children:
+    - Name: FontSize
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 25.0
+    - Name: TextColor
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#007be4"
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 30.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: TextHorizontalAlignment
+      Type: BaseVariableType
+      DataType: TextHorizontalAlignment
+      ModellingRule: Optional
+      Value: 1
+    - Name: TextVerticalAlignment
+      Type: BaseVariableType
+      DataType: TextVerticalAlignment
+      ModellingRule: Optional
+      Value: 1
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 100.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 30.0
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: StringFormatter1
+        Type: StringFormatter
+        Children:
+        - Name: Format
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: {"LocaleId":"","Text":"{0:n2}"}
+        - Name: ns=2;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../Value"
+    - Name: RightMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
+    - Name: BottomMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
+  - Name: lbUnit
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Unit"
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 120.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 132.0
+    - Name: FontSize
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 15.0
+    - Name: TextColor
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#808080"
+  - Name: LeftMargin
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 20.0
+  - Name: TopMargin
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 70.0
+  - Name: Title
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: Unit
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: Value
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0

@@ -1,0 +1,66 @@
+Name: LogixAIDashboard
+Type: FolderType
+Children:
+- Name: LogixAIData
+  Type: BaseObjectType
+  Children:
+  - Name: TotalAlarmCount
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Mixer01PowerAlarmCount
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: CQIAlarmCount
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: TotalAckedAlarmCount
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: TotalConfirmedAlarmCount
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: CQIAlarmDesc1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: CQIAlarmDesc2
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: CQIAlarmDesc3
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: CQIAlarmDesc4
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: CQIAlarmDesc5
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: CQIAlarmCount1
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 5
+  - Name: CQIAlarmCount2
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 4
+  - Name: CQIAlarmCount3
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 3
+  - Name: CQIAlarmCount4
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 2
+  - Name: CQIAlarmCount5
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 1

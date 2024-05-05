@@ -2,20 +2,9 @@ Name: Model
 Type: ModelCategoryFolder
 Children:
 - File: Oven/Oven.yaml
+- File: LogixAIDashboard/LogixAIDashboard.yaml
 - Name: bool1
   Id: g=7f4b3027db20910e275315ccdd41ab3e
   Type: BaseDataVariableType
   DataType: Boolean
   Value: false
-- Name: Variable1
-  Type: BaseDataVariableType
-  DataType: Int32
-  Value: 0
-- Name: Variable2
-  Type: BaseDataVariableType
-  DataType: Int32
-  Value: 0
-- Name: Variable3
-  Type: BaseDataVariableType
-  DataType: Int32
-  Value: 0
