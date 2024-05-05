@@ -25,7 +25,7 @@
     orient: 'horizontal',
     left: 'center',
     min: 10,
-    max: 300,
+    max: 50,
     text: ['High Count', 'Low Count'],
     // Map the score column to color
     dimension: 0,
