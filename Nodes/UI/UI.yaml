@@ -236,22 +236,6 @@ Children:
             Type: PropertyType
             DataType: NodeId
             Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
-      - Name: Panel3
-        Type: NavigationPanelItem
-        Children:
-        - Name: Title
-          Type: BaseDataVariableType
-          DataType: LocalizedText
-          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-        - Name: Panel
-          Type: NodePointer
-          DataType: NodeId
-          Value: "/Objects/LogixAI_Optix/UI/Screens/Oven_LogixAI"
-          Children:
-          - Name: Kind
-            Type: PropertyType
-            DataType: NodeId
-            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
       - Name: Panel4
         Type: NavigationPanelItem
         Children:
@@ -268,7 +252,7 @@ Children:
             Type: PropertyType
             DataType: NodeId
             Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
-      - Name: Panel5
+      - Name: Panel3
         Type: NavigationPanelItem
         Children:
         - Name: Title
@@ -278,39 +262,7 @@ Children:
         - Name: Panel
           Type: NodePointer
           DataType: NodeId
-          Value: "/Objects/LogixAI_Optix/UI/Screens/OPC_UA_Client"
-          Children:
-          - Name: Kind
-            Type: PropertyType
-            DataType: NodeId
-            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
-      - Name: Panel6
-        Type: NavigationPanelItem
-        Children:
-        - Name: Title
-          Type: BaseDataVariableType
-          DataType: LocalizedText
-          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-        - Name: Panel
-          Type: NodePointer
-          DataType: NodeId
-          Value: "/Objects/LogixAI_Optix/UI/Screens/Mixer02_LogixAi"
-          Children:
-          - Name: Kind
-            Type: PropertyType
-            DataType: NodeId
-            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
-      - Name: Panel7
-        Type: NavigationPanelItem
-        Children:
-        - Name: Title
-          Type: BaseDataVariableType
-          DataType: LocalizedText
-          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-        - Name: Panel
-          Type: NodePointer
-          DataType: NodeId
-          Value: "/Objects/LogixAI_Optix/UI/Screens/Alarms"
+          Value: "/Objects/LogixAI_Optix/UI/Screens/Oven_LogixAI"
           Children:
           - Name: Kind
             Type: PropertyType
@@ -359,6 +311,22 @@ Children:
           Type: NodePointer
           DataType: NodeId
           Value: "/Objects/LogixAI_Optix/UI/Screens/LogixAI_CQI_Dashboard"
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+      - Name: Panel7
+        Type: NavigationPanelItem
+        Children:
+        - Name: Title
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Panel
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/LogixAI_Optix/UI/Screens/Alarms"
           Children:
           - Name: Kind
             Type: PropertyType
@@ -546,4 +514,4 @@ Children:
     DataType: String
     ValueRank: OneDimension
     ArrayDimensions: [0]
-    Value: ["http://192.168.46.130:3000/public-dashboards/abbfaed2468c4d93a09c5a7dae54fcdd?orgId=1&refresh=10s&from=now-15m&to=now","http://192.168.46.130:3000/public-dashboards/ecb67a4ffc734cc9b8e204a37a1f23b7?orgId=1&refresh=10s&from=now-15m&to=now"]
+    Value: ["http://192.168.46.130:3000/public-dashboards/abbfaed2468c4d93a09c5a7dae54fcdd?orgId=1&refresh=10s&from=now-15m&to=now","http://192.168.46.130:3000/public-dashboards/ecb67a4ffc734cc9b8e204a37a1f23b7?orgId=1&refresh=10s&from=now-15m&to=now","https://fanny-virtual-machine/"]
